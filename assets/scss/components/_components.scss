@@ -1,0 +1,38 @@
+@use '../abstract/index' as *;
+
+%tpl-h2 {
+	@include adaptive-value-min-max(font-size, 20, 48);
+	font-weight: 600 !important;
+	line-height: 105%;
+	margin-bottom: 0.3em;
+}
+
+%tpl-section {
+	@include adaptive-value-min-max(padding-top, 40, 60);
+	@include adaptive-value-min-max(padding-bottom, 40, 60);
+
+	position: relative;
+}
+
+%tpl-card-title {
+	@include adaptive-value-min-max(font-size, 18, 24);
+	font-weight: 600;
+	line-height: 140%;
+}
+
+%tpl-card-p {
+	@include adaptive-value-min-max(font-size, 14, 18);
+	color: $main-text;
+	line-height: 160%;
+}
+
+%tpl-card-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.45em 0.95em;
+	border-radius: 0.5em;
+	@include adaptive-value-min-max(font-size, 16, 20);
+	font-weight: 600;
+	background: $main-primary;
+}

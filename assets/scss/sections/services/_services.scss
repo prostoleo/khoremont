@@ -1,0 +1,181 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.services-section {
+	@extend %tpl-section;
+
+	// .services-section__container
+
+	&__container {
+	}
+
+	// .services-section__content
+
+	&__content {
+	}
+
+	.content {
+		// .content__title
+
+		&__title {
+			@extend %tpl-h2;
+
+			position: relative;
+			// .content__icon
+
+			&-icon {
+				position: absolute;
+				left: -7%;
+				top: 50%;
+
+				transform: translate(0%, -50%);
+
+				@include adaptive-value-min-max(width, 80, 120);
+				height: auto;
+				max-height: 150px;
+
+				opacity: 0.12;
+			}
+		}
+
+		// .content__cards
+
+		&__cards {
+			@include adaptive-value-min-max(margin-top, 30, 50);
+			display: grid;
+			gap: 2.5rem;
+
+			@include mq(med) {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+				gap: 1.5rem;
+			}
+			@include mq(lg) {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+				gap: 1.5rem;
+			}
+		}
+
+		// .content__cards-item
+
+		&__cards-item {
+		}
+
+		.card {
+			--radius: 1em;
+
+			// margin-top: 2.5rem;
+
+			width: 100%;
+
+			overflow: hidden;
+
+			background: $main-secondary;
+			border-radius: var(--radius);
+
+			display: grid;
+			grid-template-rows: 15rem auto auto;
+			gap: 1.25rem;
+
+			@include mq(med) {
+				// margin-top: 0;
+				grid-template-rows: 15rem 1fr auto;
+			}
+
+			@include mq(lg) {
+				// margin-top: 0;
+				grid-template-rows: 17rem 1fr auto;
+			}
+			@include mq(xl) {
+				// margin-top: 0;
+				grid-template-rows: 20rem 1fr auto;
+			}
+
+			&:first-of-type {
+				// margin-top: 0;
+			}
+
+			// .card__header
+
+			&__header {
+				height: 100%;
+				overflow: hidden;
+				border-top-left-radius: var(--radius);
+				border-top-right-radius: var(--radius);
+
+				// .card__header-img
+
+				&-img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			// .card__body
+
+			&__body {
+				height: fit-content;
+				padding: 0 1em;
+				overflow: hidden;
+			}
+
+			// .card__title
+
+			&__title {
+				@extend %tpl-card-title;
+				margin-bottom: 0.5em;
+				width: fit-content;
+
+				position: relative;
+
+				&::after {
+					@include pseudo;
+					left: calc(100% + 1rem);
+					// right: -1rem;
+					top: 50%;
+
+					width: 4rem;
+					height: 3px;
+
+					transform: translate(0, -50%);
+
+					background: $main-primary;
+					border-radius: 0.25em;
+				}
+			}
+
+			// .card__text
+
+			&__text {
+				display: grid;
+				gap: 0.5em;
+			}
+
+			// .card__text-p
+
+			&__text-p {
+				@extend %tpl-card-p;
+				color: $main-text !important;
+				max-width: 60ch;
+			}
+
+			// .card__footer
+
+			&__footer {
+				padding: 0 1em 2em;
+				// align-self: flex-end;
+
+				// .card__footer-btn
+
+				&-btn {
+					@extend %tpl-card-button;
+					// color: $black;
+				}
+			}
+		}
+	}
+}

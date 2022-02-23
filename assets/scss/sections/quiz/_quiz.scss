@@ -1,0 +1,47 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.quiz-section {
+	@include adaptive-value-min-max(padding-top, 40, 80);
+	@include adaptive-value-min-max(padding-bottom, 40, 80);
+	background: $white;
+	// background: red;
+
+	// .quiz-section__container
+
+	&__container {
+	}
+
+	// .quiz-section__content
+
+	&__content {
+	}
+
+	// .quiz-section__title
+
+	&__title {
+		@extend %tpl-h2;
+	}
+
+	// .quiz-section__text
+
+	&__text {
+		font-weight: 400;
+		color: $main-text;
+	}
+
+	#quiz-wrapper {
+		@include adaptive-value-min-max(margin-top, 30, 50);
+		// background: white;
+
+		#quiz-container {
+			min-height: unset !important;
+		}
+
+		p {
+			color: inherit !important;
+		}
+	}
+}
+.container {
+}

@@ -1,0 +1,284 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.steps-section {
+	@extend %tpl-section;
+	overflow-x: hidden !important;
+
+	// .steps-section__container
+
+	&__container {
+		position: relative;
+		// overflow-x: clip;
+	}
+
+	// .steps-section__img
+
+	&__img {
+		display: none;
+
+		@include mq(med) {
+			display: block;
+
+			position: absolute;
+
+			top: -3rem;
+			right: -5rem;
+
+			width: clamp(150px, 20vw, 500px);
+		}
+	}
+
+	// .steps-section__content
+
+	&__content {
+	}
+
+	.content {
+		// .content__title
+
+		&__title {
+			@extend %tpl-h2;
+			// margin-bottom: 0.25em;
+		}
+
+		// .content__steps
+
+		&__steps {
+			margin-top: 1.5em;
+
+			display: grid;
+			grid-auto-flow: row;
+			grid-auto-columns: 1fr;
+			gap: 3.15rem;
+
+			@include mq(med) {
+				margin-top: 2.5em;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas:
+					'one two'
+					'four three'
+					'five six'
+					'. seven';
+			}
+
+			@include mq(xl) {
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-areas:
+					'one two three'
+					'six five four'
+					'seven . .';
+			}
+		}
+
+		// .content__steps-item
+
+		&__steps-item {
+		}
+
+		.item {
+			width: min(80%, 350px);
+
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 0.85rem;
+
+			@include mq(med) {
+				width: 92%;
+			}
+
+			@include mq(xl) {
+				width: 100%;
+			}
+
+			&:nth-of-type(1) {
+				@include mq(med) {
+					grid-area: one;
+				}
+			}
+			&:nth-of-type(2) {
+				@include mq(med) {
+					grid-area: two;
+				}
+			}
+			&:nth-of-type(3) {
+				@include mq(med) {
+					grid-area: three;
+				}
+			}
+			&:nth-of-type(4) {
+				@include mq(med) {
+					grid-area: four;
+				}
+			}
+			&:nth-of-type(5) {
+				@include mq(med) {
+					grid-area: five;
+				}
+			}
+			&:nth-of-type(6) {
+				@include mq(med) {
+					grid-area: six;
+				}
+			}
+			&:nth-of-type(7) {
+				@include mq(med) {
+					grid-area: seven;
+				}
+			}
+
+			// .item__number
+
+			&__number {
+				flex: 0 0 30px;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 30px;
+				height: 30px;
+
+				font-size: 1rem;
+				font-weight: 500;
+				line-height: 1;
+
+				// aspect-ratio: 1 / 1;
+
+				color: $white;
+				background: $main-primary;
+
+				border-radius: 50%;
+			}
+
+			// .item__title
+
+			&__title {
+			}
+
+			// .item__arrow
+
+			&__arrow {
+				position: absolute;
+
+				// margin-top: 1rem;
+
+				right: -20%;
+				top: 150%;
+
+				width: 65px;
+				// height: 6px;
+
+				transform: rotate(105deg);
+
+				@include mq(med) {
+					width: 100px;
+				}
+
+				// .item__arrow-img
+
+				&-img {
+					object-fit: cover;
+				}
+			}
+
+			&:nth-of-type(1) {
+				@include mq(med) {
+					.item__arrow {
+						// width: 100px;
+						top: 0;
+						transform: rotate(0deg) translate(0%, -50%);
+					}
+				}
+
+				@include mq(xl) {
+					.item__arrow {
+						transform: rotate(0deg) translate(-20%, -75%);
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				@include mq(med) {
+					.item__arrow {
+					}
+				}
+
+				@include mq(xl) {
+					.item__arrow {
+						top: 0;
+						transform: rotate(0deg) translate(-20%, -75%);
+					}
+				}
+			}
+			&:nth-of-type(3) {
+				@include mq(med) {
+					.item__arrow {
+						left: 0;
+						top: 0;
+						transform: rotate(0deg) scaleX(-1) translate(115%, -50%);
+					}
+				}
+
+				@include mq(xl) {
+					.item__arrow {
+						right: 0;
+						left: unset;
+						transform: rotate(90deg) translate(50%, -50%) scaleX(1);
+					}
+				}
+			}
+			&:nth-of-type(4) {
+				@include mq(med) {
+					.item__arrow {
+						top: 0;
+						left: 0;
+						transform: scaleY(-1) rotate(-90deg) translate(50%, -290%);
+					}
+				}
+
+				@include mq(xl) {
+					.item__arrow {
+						top: 0;
+						left: 0;
+						transform: rotate(0deg) translate(-105%, -50%) scaleX(-1);
+					}
+				}
+			}
+			&:nth-of-type(5) {
+				@include mq(med) {
+					.item__arrow {
+						top: 0;
+						transform: rotate(0deg) translate(0%, -50%);
+					}
+				}
+				@include mq(xl) {
+					.item__arrow {
+						top: 0;
+						left: 0;
+						transform: rotate(0deg) translate(-105%, -50%) scaleX(-1);
+					}
+				}
+			}
+			&:nth-of-type(6) {
+				@include mq(med) {
+					.item__arrow {
+					}
+				}
+				@include mq(xl) {
+					.item__arrow {
+						top: 0;
+						left: 0;
+						transform: rotate(90deg) translate(50%, 275%) scaleY(-1);
+					}
+				}
+			}
+			&:nth-of-type(7) {
+				.item__arrow {
+					display: none;
+				}
+			}
+		}
+	}
+}

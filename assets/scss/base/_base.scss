@@ -1,0 +1,47 @@
+@use '../abstract/colors' as *;
+@use '../abstract/mixins' as *;
+
+.container {
+	max-width: $maw-container;
+	margin: 0 auto;
+	width: 90%;
+}
+
+#overlay {
+	// display: none;
+
+	position: fixed;
+	inset: 0;
+
+	background: hsla(0, 0%, 0%, 0.35);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 3;
+
+	cursor: pointer;
+}
+
+body {
+	background: $body-bg;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 110%;
+}
+
+h5 {
+	line-height: 110%;
+}
+
+p {
+	color: $white;
+	max-width: 65ch;
+}
+
+a {
+}

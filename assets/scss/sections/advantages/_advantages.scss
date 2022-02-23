@@ -1,0 +1,136 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.adv-section {
+	@extend %tpl-section;
+
+	// .adv-section__container
+
+	&__container {
+	}
+
+	// .adv-section__content
+
+	&__content {
+	}
+
+	.content {
+		// .content__title
+
+		&__title {
+			@extend %tpl-h2;
+
+			position: relative;
+			// .content__icon
+
+			&-icon {
+				position: absolute;
+				left: -5%;
+				top: 35%;
+
+				transform: translate(0%, -50%);
+
+				@include adaptive-value-min-max(width, 30, 100);
+				height: auto;
+
+				opacity: 0.12;
+			}
+		}
+
+		// .content__cards
+
+		&__cards {
+			@include adaptive-value-min-max(margin-top, 30, 50);
+
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+			@include adaptive-value-min-max(gap, 10, 20);
+			// grid-auto-rows: 1fr;
+
+			@include mq(xl) {
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			}
+		}
+
+		.card {
+			display: grid;
+			grid-template-rows: auto 1fr;
+			gap: 15px;
+
+			border-radius: 15px;
+
+			background: $main-secondary;
+			padding: 15px;
+
+			// .card__header
+
+			&__header {
+				margin: 10px 0;
+			}
+
+			// .card__icon
+
+			&__icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				padding: 0.5em;
+				background: $white;
+
+				overflow: hidden;
+				// width: max-content;
+
+				// .card__icon-img
+
+				&-img {
+					display: block;
+					width: min(90%, 40px);
+					// width: 40px;
+					height: auto;
+				}
+			}
+
+			// .card__body
+
+			&__body {
+				--line-h: 1.4em;
+
+				display: grid;
+				grid-template-rows: max-content 1fr;
+				gap: 1.25rem;
+				@include adaptive-value-min-max(font-size, 16, 24);
+				line-height: var(--line-h);
+
+				margin-bottom: 15px;
+			}
+
+			// .card__title
+
+			&__title {
+				width: 60%;
+				max-width: 15ch;
+				align-self: stretch;
+
+				@extend %tpl-card-title;
+			}
+
+			// .card__text
+
+			&__text {
+				display: grid;
+				grid-auto-flow: row;
+				gap: 15px;
+			}
+
+			// .card__text-p
+
+			&__text-p {
+				@extend %tpl-card-p;
+			}
+		}
+	}
+}

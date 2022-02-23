@@ -1,0 +1,123 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.sales-section {
+	@extend %tpl-section;
+	overflow-x: hidden !important;
+
+	// .sales-section__container
+
+	&__container {
+	}
+
+	// .sales-section__content
+
+	&__content {
+	}
+
+	.content {
+		// .content__title
+
+		&__title {
+			@extend %tpl-h2;
+			margin-bottom: 1.25em;
+		}
+
+		// .content__sales
+
+		&__sales {
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+
+			gap: 1.25rem;
+
+			@include mq(med) {
+				flex-direction: row;
+			}
+		}
+
+		// .content__sales-img
+
+		&__sales-img {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			transform: translate(50%, -50%);
+
+			width: clamp(120px, 10vw, 200px);
+		}
+
+		// .content__sales-item
+
+		&__sales-item {
+		}
+
+		.item {
+			flex: 0 1 50%;
+			background: $main-secondary;
+			border-radius: 1.25em;
+
+			padding: 1.125em;
+
+			@include mq(lg) {
+				padding: 1.25em 1.125em;
+			}
+			@include mq(lg) {
+				padding: 1.5em 1.25em;
+			}
+
+			// .item__title
+
+			&__title {
+				@include adaptive-value-min-max(font-size, 16, 20);
+				font-weight: 700;
+				color: $accent-dark;
+
+				margin-bottom: 0.8em;
+
+				position: relative;
+
+				width: min(95%, 300px);
+
+				@include mq(med) {
+					width: min(95%, 350px);
+				}
+
+				&::before {
+					@include pseudo();
+
+					right: 0;
+					top: 50%;
+					// float: right;
+
+					background: $accent-light;
+					width: clamp(40px, 2.25vw, 120px);
+					height: 3px;
+
+					border-radius: 0.25em;
+
+					transform: translate(0%, -50%);
+
+					@include mq(med) {
+						width: 60px;
+						transform: translate(0%, -50%);
+					}
+				}
+			}
+
+			// .item__subtitle
+
+			&__subtitle {
+				@include adaptive-value-min-max(font-size, 14, 18);
+				font-weight: 400;
+				color: $main-text;
+				opacity: 0.75;
+
+				hyphens: auto;
+			}
+		}
+	}
+}

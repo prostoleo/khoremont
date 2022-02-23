@@ -1,0 +1,138 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.questions-section {
+	@extend %tpl-section;
+
+	// .questions-section__container
+
+	&__container {
+		position: relative;
+	}
+
+	// .questions-section__img
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		z-index: -1;
+
+		width: 210px;
+		display: none;
+
+		transform: translate(-50%, -50%);
+
+		@include mq(med) {
+			display: block;
+		}
+
+		@include mq(2xl) {
+			width: 350px;
+			transform: translate(-65%, -65%);
+		}
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	// .questions-section__content
+
+	&__content {
+	}
+
+	.content {
+		// .content__title
+
+		&__title {
+			@extend %tpl-h2;
+		}
+
+		// .content__questions
+
+		&__questions {
+			@include adaptive-value-min-max(margin-top, 30, 50);
+			display: grid;
+			gap: 1.5rem;
+
+			& > * {
+				margin-top: 0;
+			}
+
+			@include mq(lg) {
+				grid-template-columns: repeat(2, 1fr);
+
+				gap: 2.25rem;
+			}
+		}
+
+		// .content__questions-item
+
+		&__questions-item {
+		}
+
+		.item {
+			// .item__header
+
+			&__header {
+				@extend %tpl-card-title;
+				font-weight: 500;
+			}
+
+			// .item__body
+
+			&__body {
+			}
+
+			// .item__body-p
+
+			&__body-p {
+				@extend %tpl-card-p;
+				line-height: 160%;
+			}
+		}
+	}
+}
+
+.uk-accordion-title {
+	&::before {
+		float: left !important;
+		width: 1.875rem !important;
+		height: 1.875rem !important;
+		margin-right: 15px !important;
+		margin-left: unset !important;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: $main-primary;
+		border-radius: 50%;
+
+		background-image: url(/assets/img/icons/plus.svg);
+		background-size: 20px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		// filter: brightness(10%);
+		transform: rotate(0deg);
+		transition: transform 150ms ease-in-out;
+	}
+}
+
+.uk-open {
+	.uk-accordion-title {
+		&::before {
+			background: $main-primary;
+			background-image: url(/assets/img/icons/plus.svg);
+			background-size: 20px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			// filter: brightness(10%);
+			transform: rotate(45deg);
+			transition: transform 150ms ease-in-out;
+		}
+	}
+}
+.uk-accordion-content {
+}
