@@ -26,7 +26,7 @@
 		<link rel="modulepreload" href="/assets/vendor.749cf4e8.493f35f6.js" />
 		<script type="module" crossorigin src="/assets/index.65be2e67.js"></script>
 		<link rel="modulepreload" href="/assets/vendor.2331be84.js">
-		<link rel="stylesheet" href="/assets/index.2acbfe6b.css">
+		<link rel="stylesheet" href="/assets/index.403bd82a.css">
 	</head>
 	<body>
 		<header class="header">
@@ -113,10 +113,10 @@
 		<!-- /.header -->
 
 		<!-- section = hero section -->
-		<section class="hero-section">
+		<section aria-labelledby="hero-title" class="hero-section">
 			<div class="hero-section__roller">
 				<img
-					src="/assets/roller-img.a9f847f5.png"
+					src="/assets/roller-img-min.3b7864ff.png"
 					alt=""
 					class="hero-section__roller-img"
 				/>
@@ -125,7 +125,7 @@
 
 			<div class="hero-section__container container">
 				<div class="hero-section__left-col left-col">
-					<h1 class="left-col__title">
+					<h1 id="hero-title" class="left-col__title">
 						Качественный и современный ремонт квартир под “ключ” в Москве
 					</h1>
 					<!-- /.left-col__title -->
@@ -176,7 +176,7 @@
 
 				<div class="hero-section__right-col right-col">
 					<img
-						src="/assets/hero-img.f1c8438f.jpg"
+						src="/assets/hero-img-min.75d7a263.jpg"
 						alt="счастливые заказчики"
 						class="right-col__img"
 					/>
@@ -187,10 +187,12 @@
 		</section>
 		<!-- /.hero-section -->
 
-		<section class="quiz-section">
+		<section aria-labelledby="quiz-title" class="quiz-section">
 			<div class="quiz-section__container container">
 				<div class="quiz-section__content">
-					<h2 class="quiz-section__title">Рассчитайте стоимость ремонта</h2>
+					<h2 id="quiz-title" class="quiz-section__title">
+						Рассчитайте стоимость ремонта
+					</h2>
 					<!-- /.quiz-section__title -->
 					<p class="quiz-section__text">
 						Пройдите небольшой вопрос и рассчитайте стоимость ремонта за 3
@@ -205,10 +207,14 @@
 		</section>
 		<!-- /.quiz-section -->
 
-		<section class="adv-section" id="advantages">
+		<section
+			aria-labelledby="content-title"
+			class="adv-section"
+			id="advantages"
+		>
 			<div class="adv-section__container container">
 				<div class="adv-section__content content">
-					<h2 class="content__title">
+					<h2 id="content-title" class="content__title">
 						Наши преимущества
 						<img
 							src="/assets/thumb.5d59ad55.svg"
@@ -391,10 +397,14 @@
 		</section>
 		<!-- /#advantages.adv-section -->
 
-		<section id="services" class="services-section">
+		<section
+			aria-labelledby="services-title"
+			id="services"
+			class="services-section"
+		>
 			<div class="services-section__container container">
 				<div class="services-section__content content">
-					<h2 class="content__title">
+					<h2 id="services-title" class="content__title">
 						Услуги
 						<img
 							src="/assets/repair.e7ca42b6.svg"
@@ -407,7 +417,7 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/chernovoy.561b95af.jpg"
+									src="/assets/chernovoy-min.68edb73f.jpg"
 									alt=""
 									class="card__header-img"
 								/>
@@ -442,7 +452,7 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/kosmeticheskiy.13d0ea38.jpg"
+									src="/assets/kosmeticheskiy-min.f5f4388d.jpg"
 									alt=""
 									class="card__header-img"
 								/>
@@ -477,7 +487,7 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/kapitalny.fee5e12d.jpg"
+									src="/assets/kapitalny-min.5ba11259.jpg"
 									alt=""
 									class="card__header-img"
 								/>
@@ -512,7 +522,7 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/dizainersky.1e05ea88.jpg"
+									src="/assets/dizainersky-min.4940a039.jpg"
 									alt=""
 									class="card__header-img"
 								/>
@@ -552,13 +562,19 @@
 		</section>
 		<!-- /#services.services-section -->
 
-		<section id="questions" class="questions-section">
+		<section
+			aria-labelledby="questions-title"
+			id="questions"
+			class="questions-section"
+		>
 			<div class="questions-section__container container">
 				<div class="questions-section__img">
-					<img src="/assets/laser.e4d226a9.png" alt="фотография лазера" />
+					<img src="/assets/laser-min.ef29e346.png" alt="фотография лазера" />
 				</div>
 				<div class="questions-section__content content">
-					<h2 class="content__title">Ответы на частые вопросы</h2>
+					<h2 id="questions-title" class="content__title">
+						Ответы на частые вопросы
+					</h2>
 					<!-- /.content__title -->
 					<ul
 						class="content__questions"
@@ -667,6 +683,340 @@
 			<!-- /.question-section__container container -->
 		</section>
 		<!-- /#questions.questions-section -->
+
+		<section aria-labelledby="steps-title" id="steps" class="steps-section">
+			<div class="steps-section__container container">
+				<div class="steps-section__img">
+					<img src="/assets/hammer-min.f7dce859.png" alt="" />
+				</div>
+				<!-- /.steps-section__img -->
+				<div class="steps-section__content content">
+					<h2 id="steps-title" class="content__title">
+						7 шагов к отличному ремонту
+					</h2>
+					<!-- /.content__title -->
+					<div class="content__steps">
+						<div class="content__steps-item item">
+							<div class="item__number">1</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">Оставляете заявку</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">2</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">К вам призжает наш консультант</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">3</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">Расчет сметы</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">4</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">Согласование и подписание договора</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">5</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">Приступаем к ремонту</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">6</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">
+								Генеральная уборка перед сдачей объекта
+							</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+						<div class="content__steps-item item">
+							<div class="item__number">7</div>
+							<!-- /.item__number -->
+							<h3 class="item__title">Передача ключей</h3>
+							<!-- /.item__title -->
+							<div class="item__arrow">
+								<img
+									src="/assets/arrow.0c5b54ea.svg"
+									alt=""
+									class="item__arrow-img"
+								/>
+							</div>
+							<!-- /.item__arrow -->
+						</div>
+						<!-- /.content__steps-item item -->
+					</div>
+					<!-- /.content__steps -->
+				</div>
+				<!-- /.steps-section__content content -->
+			</div>
+			<!-- /.steps-section__container container -->
+		</section>
+		<!-- /#steps.steps-section -->
+
+		<section aria-labelledby="sales-title" id="sales" class="sales-section">
+			<div class="sales-section__container container">
+				<div class="sales-section__content content">
+					<h2 id="sales-title" class="content__title">Акции</h2>
+					<!-- /.content__title -->
+					<div class="content__sales">
+						<div class="content__sales-img">
+							<img src="/assets/sale.0e23d814.svg" alt="" />
+						</div>
+						<div class="content__sales-item item">
+							<!-- /.item__number -->
+							<h3 class="item__title">Получите скидку в 7%</h3>
+							<!-- /.item__title -->
+
+							<p class="item__subtitle">
+								При разовой оплате стоимости ремонта на 50% и более даем
+								<b>дополнительную скидку в 7%!</b>
+							</p>
+							<!-- /.item__subtitle -->
+						</div>
+						<!-- /.content__sales-item item -->
+						<div class="content__sales-item item">
+							<!-- /.item__number -->
+							<h3 class="item__title">Комплект полок</h3>
+							<!-- /.item__title -->
+
+							<p class="item__subtitle">
+								Закажите ремонт до 31.12 и получите <b>комплект полок</b> в
+								подарок!
+							</p>
+							<!-- /.item__subtitle -->
+						</div>
+						<!-- /.content__sales-item item -->
+					</div>
+					<!-- /.content__sales -->
+				</div>
+				<!-- /.sales-section__content content -->
+			</div>
+			<!-- /.sales-section__container container -->
+		</section>
+		<!-- /#sales.sales-section -->
+		<section
+			aria-labelledby="estimator-title"
+			id="estimator"
+			class="estimator-section"
+		>
+			<div class="estimator-section__container container">
+				<div class="estimator-section__content content">
+					<div class="content__wrapper">
+						<div class="content__left left">
+							<div class="left__text">
+								<h3 id="estimator-title" class="left__text-title">
+									Бесплатный выезд сметчика
+								</h3>
+								<!-- /.left__text-title -->
+								<p class="left__text-subtitle">
+									Предоставим подробную смету уже на следующий день после
+									замеров
+								</p>
+								<!-- /.left__text-subtitle -->
+							</div>
+							<!-- /.left__text -->
+							<button class="left__btn btn">Вызвать сметчика</button>
+							<!-- /.left__btn btn -->
+						</div>
+						<!-- /.content__left -->
+						<div class="content__img">
+							<img src="/assets/estimator-min.f09940a7.png" alt="" />
+						</div>
+						<!-- /.content__img -->
+					</div>
+					<!-- /.content__wrapper -->
+				</div>
+				<!-- /.estimator-section__content content -->
+			</div>
+			<!-- /.estimator-section__container container -->
+		</section>
+		<!-- /#estimator.estimator-section -->
+
+		<section aria-label="Свяжитесь с нами" id="contact" class="contact-section">
+			<div class="contact-section__container container">
+				<div class="contact-section__content content">
+					<div class="content__left left">
+						<h2 id="contact-title" class="left__title">Остались вопросы?</h2>
+						<!-- /.left__title -->
+						<p class="left__subtitle">Заполните форму, и мы Вам перезвоним</p>
+						<!-- /.left__subtitle -->
+						<form class="left__form form">
+							<div class="form__inputs">
+								<div class="form__row">
+									<input
+										id="form-input-name"
+										type="text"
+										class="form__row-input"
+										placeholder="Ваше имя"
+									/>
+									<small class="form__row-error"
+										>Это поле является обязательным для заполнения</small
+									>
+									<!-- /.form__row-error -->
+								</div>
+								<!-- /.form__row -->
+								<div class="form__row">
+									<input
+										id="form-input-phone"
+										type="text"
+										class="form__row-input"
+										placeholder="Ваш телефон"
+									/>
+									<small class="form__row-error"
+										>Это поле является обязательным для заполнения</small
+									>
+									<!-- /.form__row-error -->
+								</div>
+								<!-- /.form__row -->
+								<div class="form__row form__row--checkbox">
+									<input
+										id="form-checkbox-agree"
+										type="checkbox"
+										class="form__row-checkbox"
+										checked
+									/>
+									<label for="form-checkbox-agree" class="form__row-agree">
+										Я согласен на обработку персональных данных
+									</label>
+								</div>
+								<!-- /.form__row form__row--checkbox -->
+							</div>
+							<!-- /.form__inputs -->
+							<button class="btn form__submit">Перезвоните мне</button>
+							<!-- /.btn form__submit -->
+						</form>
+						<!-- /.left__form form -->
+					</div>
+					<!-- /.content__left -->
+					<div class="content__right">
+						<img
+							src="/assets/question-girl-min.0b3e2611.png"
+							alt=""
+							class="content__right-img"
+						/>
+					</div>
+					<!-- /.content__right -->
+				</div>
+				<!-- /.contact-section__content content -->
+			</div>
+			<!-- /.contact-section__container -->
+		</section>
+		<!-- /#contact.contact-section -->
+
+		<section id="map" class="map-section">
+			<div class="map-section__container container">
+				<div class="map-section__content content">
+					<h2 class="content__title"></h2>
+					<!-- /.content__title -->
+					<div class="content__contacts contacts">
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="/assets/phone.903d09ce.svg" alt="" />
+							</div>
+							<!-- /.contacts__icon -->
+							<a href="callto:84997777777" class="contacts__text"
+								>+7 (499) 777-77-77</a
+							>
+							<!-- /.contacts__text -->
+						</div>
+						<!-- /.contacts__row -->
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="/assets/pin.fdcd9bdd.svg" alt="" />
+							</div>
+							<!-- /.contacts__icon -->
+							<span class="contacts__text"
+								>Москва, поселение Сосенское, Калужское шоссе, 1-й километр,
+								8Б</span
+							>
+							<!-- /.contacts__text -->
+						</div>
+						<!-- /.contacts__row -->
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="/assets/mail.938a40ed.svg" alt="" />
+							</div>
+							<!-- /.contacts__icon -->
+							<a href="mailto:horoshi-remont@yandex.ru" class="contacts__text"
+								>horoshi-remont@yandex.ru</a
+							>
+							<!-- /.contacts__text -->
+						</div>
+						<!-- /.contacts__row -->
+					</div>
+					<!-- /.content__contacts contacts -->
+				</div>
+				<!-- /.map-section__content content -->
+			</div>
+			<!-- /.map-section__container container -->
+		</section>
+		<!-- /#map.map-section -->
+
+		<iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A06fd91523efdd425f725f73700896853ef29f7d85219cd6f6cd679246fd8447b&amp;source=constructor"
+			width="1200"
+			height="650"
+			frameborder="0"
+		></iframe>
 
 		<div id="overlay"></div>
 

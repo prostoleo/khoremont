@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - DEPLOYPATH=/home/s132036/prostoleo3.h1n.ru
+    - /bin/cp -r * $DEPLOYPATH

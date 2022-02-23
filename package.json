@@ -1,17 +1,18 @@
 {
-  "name": "renovation-khoremont",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.49.7",
-    "vite": "^2.8.0"
-  },
-  "dependencies": {
-    "gsap": "^3.9.1"
-  }
+	"name": "renovation-khoremont",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && copyfiles --flat .cpanel.yml dist",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"sass": "^1.49.7",
+		"vite": "^2.8.0"
+	},
+	"dependencies": {
+		"copyfiles": "^2.4.1",
+		"gsap": "^3.9.1"
+	}
 }
