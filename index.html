@@ -460,9 +460,10 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/img/chernovoy-min.jpg"
+									data-src="/assets/img/chernovoy-min.jpg"
 									alt=""
 									class="card__header-img"
+									uk-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -495,9 +496,10 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/img/kosmeticheskiy-min.jpg"
+									data-src="/assets/img/kosmeticheskiy-min.jpg"
 									alt=""
 									class="card__header-img"
+									uk-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -530,9 +532,10 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/img/kapitalny-min.jpg"
+									data-src="/assets/img/kapitalny-min.jpg"
 									alt=""
 									class="card__header-img"
+									uk-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -565,9 +568,10 @@
 						<li class="content__cards-item card">
 							<header class="card__header">
 								<img
-									src="/assets/img/dizainersky-min.jpg"
+									data-src="/assets/img/dizainersky-min.jpg"
 									alt=""
 									class="card__header-img"
+									uk-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -1005,10 +1009,10 @@
 		</section>
 		<!-- /#contact.contact-section -->
 
-		<section id="map" class="map-section">
+		<section aria-labelledby="map-title" id="map" class="map-section">
 			<div class="map-section__container container">
 				<div class="map-section__content content">
-					<h2 class="content__title"></h2>
+					<h2 id="map-title" class="content__title">Контакты</h2>
 					<!-- /.content__title -->
 					<div class="content__contacts contacts">
 						<div class="contacts__row">
@@ -1049,17 +1053,17 @@
 					<!-- /.content__contacts contacts -->
 				</div>
 				<!-- /.map-section__content content -->
+				<iframe
+					class="map-section__yandex-map"
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cc187e637b7553e13755d83222fd4b3ea2d4febbc0e0aff695105f30418ede2&amp;source=constructor"
+					width="100%"
+					height="400"
+					frameborder="0"
+				></iframe>
 			</div>
 			<!-- /.map-section__container container -->
 		</section>
 		<!-- /#map.map-section -->
-
-		<iframe
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A06fd91523efdd425f725f73700896853ef29f7d85219cd6f6cd679246fd8447b&amp;source=constructor"
-			width="1200"
-			height="650"
-			frameborder="0"
-		></iframe>
 
 		<div id="overlay"></div>
 
