@@ -978,7 +978,7 @@
 									<input
 										id="form-input-name"
 										type="text"
-										class="form__row-input"
+										class="form__row-input form__row-input--name"
 										placeholder="Ваше имя"
 									/>
 									<small class="form__row-error"
@@ -991,7 +991,7 @@
 									<input
 										id="form-input-phone"
 										type="text"
-										class="form__row-input"
+										class="form__row-input form__row-input--phone tel"
 										placeholder="Ваш телефон"
 									/>
 									<small class="form__row-error"
@@ -1006,6 +1006,7 @@
 										type="checkbox"
 										class="form__row-checkbox"
 										checked
+										required
 									/>
 									<label for="form-checkbox-agree" class="form__row-agree">
 										Я согласен на обработку персональных данных
@@ -1164,9 +1165,11 @@
 
 		<div id="overlay"></div>
 
-		<a class="uk-button uk-button-default" href="#modal" uk-toggle>Open</a>
+		<a class="uk-button uk-button-default" href="#modal-notification" uk-toggle
+			>Open</a
+		>
 
-		<div id="modal" class="main-modal" uk-modal>
+		<div id="modal-notification" class="main-modal" uk-modal>
 			<div class="main-modal__content uk-modal-dialog">
 				<div class="main-modal__header uk-modal-header">
 					<h2 id="modal-title" class="main-modal__title uk-modal-title">
@@ -1181,7 +1184,7 @@
 					</button>
 				</div>
 				<div class="main-modal__body uk-modal-body">
-					<p id="modal-paragraph" style="color: black">
+					<p id="modal-paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

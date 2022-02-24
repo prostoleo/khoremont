@@ -6,9 +6,19 @@
 
 	&__content {
 		border-radius: 1.25em;
-		background: $main-secondary;
+		// background: $main-secondary;
+		background: $white;
 		// outline: 1px solid red;
 		overflow: hidden;
+
+		&.success {
+			background: hsl(120deg 73% 86%);
+		}
+
+		&.error {
+			// background: rgb(235, 136, 90);
+			background: hsl(24, 72%, 86%);
+		}
 	}
 
 	// .main-modal__header
@@ -52,6 +62,7 @@
 		p {
 			line-height: 160%;
 			font-weight: 400;
+			color: black;
 		}
 	}
 
@@ -60,5 +71,7 @@
 	&__footer {
 		display: block;
 		background: transparent;
+
+		display: none;
 	}
 }

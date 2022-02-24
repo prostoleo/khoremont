@@ -4,9 +4,12 @@ import './assets/scss/main.scss';
 
 // animation
 import animHeader from './assets/animation/anim-header';
-console.log('animHeader: ', animHeader);
+import contactSubmitForm from './assets/form/contact-form';
+// console.log('animHeader: ', animHeader);
 
 animHeader();
+
+contactSubmitForm();
 
 /* document.querySelector('#app').innerHTML = `
   <h1>Hello Vite!</h1>
