@@ -9,6 +9,8 @@
 html {
 	// font-size: 62.5%;
 	min-height: 100vh;
+	overflow-x: hidden !important;
+	scroll-behavior: smooth !important;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 	text-rendering: optimizeSpeed;
 	line-height: 1.6;
 
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 
 /* Remove list styles on ul, ol elements with a list role*/

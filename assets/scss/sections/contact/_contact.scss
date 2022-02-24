@@ -5,7 +5,10 @@
 	@extend %tpl-section;
 	padding-bottom: 0px;
 
-	margin-bottom: 3em;
+	display: block;
+	width: 100%;
+
+	// margin-bottom: 3em;
 
 	background: white;
 
@@ -42,11 +45,16 @@
 				flex: 0 0 60%;
 			}
 
+			@include mq(2xl) {
+				max-width: 530px;
+			}
+
 			// .content__right-img
 
 			&-img {
 				object-fit: cover;
 				display: block;
+				width: 100%;
 
 				transform: translateY(4px);
 
@@ -78,7 +86,7 @@
 					@include adaptive-value-min-max(font-size, 72, 200);
 
 					color: $accent-light;
-					opacity: 0.1;
+					opacity: 0.055;
 				}
 
 				&::before {

@@ -1,0 +1,64 @@
+@use '../../abstract/index' as *;
+@use '../../components/index' as *;
+
+.main-modal {
+	// .main-modal__content
+
+	&__content {
+		border-radius: 1.25em;
+		background: $main-secondary;
+		// outline: 1px solid red;
+		overflow: hidden;
+	}
+
+	// .main-modal__header
+
+	&__header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: transparent;
+
+		border-bottom: 1px solid hsla(0, 0%, 70%, 0.4);
+
+		.main-modal__title {
+			margin-left: auto;
+		}
+
+		// .main-modal__close-btn
+
+		.main-modal__close-btn {
+			margin-left: auto;
+			position: static;
+			top: unset;
+			left: unset;
+			// top: 1.5rem;
+			// right: 1.5rem;
+			padding: 0.2em;
+
+			img {
+				filter: brightness(10%) grayscale(15%);
+				transform: rotate(45deg);
+			}
+		}
+	}
+
+	// .main-modal__body
+
+	&__body {
+		display: block;
+
+		p {
+			line-height: 160%;
+			font-weight: 400;
+		}
+	}
+
+	// .main-modal__footer
+
+	&__footer {
+		display: block;
+		background: transparent;
+	}
+}

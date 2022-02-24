@@ -14,6 +14,32 @@
 	position: relative;
 }
 
+%tpl-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	@include adaptive-value-min-max(font-size, 16, 20);
+	font-weight: 600;
+
+	border-radius: 1.5em;
+	padding: 0.65em 0.9em;
+
+	line-height: 120%;
+
+	border: 1px solid transparent;
+
+	&--primary {
+		background: $accent-light;
+		color: $main-text;
+	}
+
+	&--secondary {
+		border-color: $accent-light;
+		color: $accent-light;
+	}
+}
+
 %tpl-card-title {
 	@include adaptive-value-min-max(font-size, 18, 24);
 	font-weight: 600;

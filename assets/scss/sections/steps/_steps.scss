@@ -25,7 +25,11 @@
 			top: -3rem;
 			right: -5rem;
 
-			width: clamp(150px, 20vw, 500px);
+			width: clamp(150px, 20vw, 350px);
+		}
+
+		@include mq(xl) {
+			right: -6.5rem;
 		}
 	}
 
@@ -68,6 +72,10 @@
 					'one two three'
 					'six five four'
 					'seven . .';
+			}
+
+			@include mq(2xl) {
+				width: 90%;
 			}
 		}
 
