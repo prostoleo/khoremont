@@ -62,6 +62,9 @@ function animNav() {
 	const tlNav = gsap.timeline({ paused: true });
 
 	tlNav
+		.set(overlay, {
+			display: 'block',
+		})
 		.to(overlay, {
 			opacity: 1,
 			visibility: 'visible',

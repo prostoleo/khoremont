@@ -203,11 +203,13 @@
 					</div>
 					<!-- /.left-col__pluses pluses -->
 					<div class="left-col__btn-row btn-row">
-						<button class="btn-row__btn btn-row__btn--primary">
+						<a href="#quiz" class="btn-row__btn btn-row__btn--primary">
 							Рассчитать стоимость
-						</button>
-						<!-- /.btn-row__btn btn-row__btn--primary --><button
-							class="btn-row__btn btn-row__btn--secondary"
+						</a>
+						<!-- /.btn-row__btn btn-row__btn--primary -->
+						<button
+							class="btn-row__btn btn-row__btn--secondary btn-open-form-modal"
+							data-info="Заказать замер"
 						>
 							Заказать замер
 						</button>
@@ -230,7 +232,7 @@
 		</section>
 		<!-- /.hero-section -->
 
-		<section aria-labelledby="quiz-title" class="quiz-section">
+		<section aria-labelledby="quiz-title" class="quiz-section" id="quiz">
 			<div class="quiz-section__container container">
 				<div class="quiz-section__content">
 					<h2 id="quiz-title" class="quiz-section__title">
@@ -489,7 +491,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать черновой ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -527,7 +534,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать косметический ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -565,7 +577,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать капитальный ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -602,7 +619,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать дизайнерский ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -941,7 +963,12 @@
 								<!-- /.left__text-subtitle -->
 							</div>
 							<!-- /.left__text -->
-							<button class="left__btn btn">Вызвать сметчика</button>
+							<button
+								class="left__btn btn btn-open-form-modal"
+								data-info="Вызвать сметчика"
+							>
+								Вызвать сметчика
+							</button>
 							<!-- /.left__btn btn -->
 						</div>
 						<!-- /.content__left -->
@@ -1139,15 +1166,17 @@
 					<!-- /.content__nav nav -->
 					<div class="content__actions">
 						<div class="content__actions-btns actions-block">
-							<button
+							<a
 								class="btn actions-block__btn actions-block__btn--primary"
+								href="#quiz"
 							>
-								Рассчитать стоимость</button
-							><button
+								Рассчитать стоимость</a
+							><a
+								href="#estimator"
 								class="btn actions-block__btn actions-block__btn--secondary"
 							>
 								Вызвать сметчика
-							</button>
+							</a>
 						</div>
 						<!-- /.content__actions-btn -->
 						<small id="footer-copy" class="content__copy"
@@ -1163,49 +1192,121 @@
 		</footer>
 		<!-- /.footer -->
 
-		<div id="overlay"></div>
-
-		<a class="uk-button uk-button-default" href="#modal-notification" uk-toggle
-			>Open</a
-		>
-
-		<div id="modal-notification" class="main-modal" uk-modal>
-			<div class="main-modal__content uk-modal-dialog">
-				<div class="main-modal__header uk-modal-header">
-					<h2 id="modal-title" class="main-modal__title uk-modal-title">
-						Modal Title
-					</h2>
-					<button
-						id="close-modal"
-						class="main-modal__close-btn uk-modal-close-default"
-						type="button"
-					>
-						<img src="/assets/img/icons/plus.svg" alt="" />
+		<div class="modal" id="modal">
+			<div class="modal__content">
+				<div class="modal__header header-modal">
+					<h3 class="header-modal__title">Заголовок модального</h3>
+					<!-- /.header-modal__title -->
+					<button class="header-modal__close">
+						<img
+							src="/assets/img/icons/plus.svg"
+							alt=""
+							class="header-modal__close-img"
+						/>
 					</button>
+					<!-- /.header-modal__close -->
 				</div>
-				<div class="main-modal__body uk-modal-body">
-					<p id="modal-paragraph">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
+				<!-- /.modal__header -->
+				<div class="modal__body">
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+						explicabo illo laudantium nisi provident. Quaerat, in dicta impedit
+						minus autem nemo obcaecati praesentium repudiandae aspernatur ex
+						possimus ipsam nihil laboriosam.
 					</p>
 				</div>
-				<div class="main-modal__footer uk-modal-footer uk-text-right">
-					<button
-						class="uk-button uk-button-default uk-modal-close"
-						type="button"
-					>
-						Cancel
-					</button>
-					<button class="uk-button uk-button-primary" type="button">
-						Save
-					</button>
+				<!-- /.modal__body -->
+				<div class="modal__footer footer-modal">
+					<button class="btn footer-modal__action">Действие</button>
+					<!-- /.btn footer-model__action -->
+					<button class="btn footer-modal__close">Закрыть</button>
+					<!-- /.btn footer-model__close -->
 				</div>
+				<!-- /.modal__footer -->
 			</div>
+			<!-- /.modal__content -->
+		</div>
+		<!-- /#modal.modal -->
+
+		<div class="modal modal-form" id="modal-form">
+			<div class="modal__content">
+				<div class="modal__header header-modal">
+					<h3 class="header-modal__title">Заголовок модального</h3>
+					<!-- /.header-modal__title -->
+					<button class="header-modal__close">
+						<img
+							src="/assets/img/icons/plus.svg"
+							alt=""
+							class="header-modal__close-img"
+						/>
+					</button>
+					<!-- /.header-modal__close -->
+				</div>
+				<!-- /.modal__header -->
+				<div class="modal__body">
+					<form class="left__form form">
+						<div class="form__inputs">
+							<div class="form__row">
+								<input
+									id="form-input-name"
+									type="text"
+									class="form__row-input form__row-input--name"
+									placeholder="Ваше имя"
+								/>
+								<small class="form__row-error"
+									>Это поле является обязательным для заполнения</small
+								>
+								<!-- /.form__row-error -->
+							</div>
+							<!-- /.form__row -->
+							<div class="form__row">
+								<input
+									id="form-input-phone"
+									type="text"
+									class="form__row-input form__row-input--phone tel"
+									placeholder="Ваш телефон"
+								/>
+								<small class="form__row-error"
+									>Это поле является обязательным для заполнения</small
+								>
+								<!-- /.form__row-error -->
+							</div>
+							<!-- /.form__row -->
+							<div class="form__row form__row--checkbox">
+								<input
+									id="form-checkbox-agree"
+									type="checkbox"
+									class="form__row-checkbox"
+									checked
+									required
+								/>
+								<label for="form-checkbox-agree" class="form__row-agree">
+									Я согласен на обработку персональных данных
+								</label>
+							</div>
+							<!-- /.form__row form__row--checkbox -->
+						</div>
+						<!-- /.form__inputs -->
+						<button class="btn form__submit">Отправить</button>
+						<!-- /.btn form__submit -->
+					</form>
+					<!-- /.left__form form -->
+				</div>
+				<!-- /.modal__body -->
+				<div class="modal__footer footer-modal">
+					<button class="btn footer-modal__action">Действие</button>
+					<!-- /.btn footer-model__action -->
+					<button class="btn footer-modal__close">Закрыть</button>
+					<!-- /.btn footer-model__close -->
+				</div>
+				<!-- /.modal__footer -->
+			</div>
+			<!-- /.modal__content -->
+		</div>
+		<!-- /#modal.modal -->
+
+		<div id="overlay">
+			<div class="loader"></div>
 		</div>
 
 		<script type="module" src="/main.js"></script>
