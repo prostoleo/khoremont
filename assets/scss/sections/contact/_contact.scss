@@ -112,6 +112,8 @@
 			}
 
 			.form {
+				margin-bottom: 2.5em;
+
 				@extend %tpl-form;
 			}
 		}

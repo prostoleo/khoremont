@@ -24,9 +24,9 @@
 		
 		
 		<link rel="modulepreload" href="/assets/vendor.749cf4e8.493f35f6.js" />
-		<script type="module" crossorigin src="/assets/index.65be2e67.js"></script>
+		<script type="module" crossorigin src="/assets/index.700a650b.js"></script>
 		<link rel="modulepreload" href="/assets/vendor.2331be84.js">
-		<link rel="stylesheet" href="/assets/index.f73b25ef.css">
+		<link rel="stylesheet" href="/assets/index.0f9f0db9.css">
 	</head>
 	<body>
 		<header class="header">
@@ -160,11 +160,13 @@
 					</div>
 					<!-- /.left-col__pluses pluses -->
 					<div class="left-col__btn-row btn-row">
-						<button class="btn-row__btn btn-row__btn--primary">
-							Рассчитать стоимость ремонта
-						</button>
-						<!-- /.btn-row__btn btn-row__btn--primary --><button
-							class="btn-row__btn btn-row__btn--secondary"
+						<a href="#quiz" class="btn-row__btn btn-row__btn--primary">
+							Рассчитать стоимость
+						</a>
+						<!-- /.btn-row__btn btn-row__btn--primary -->
+						<button
+							class="btn-row__btn btn-row__btn--secondary btn-open-form-modal"
+							data-info="Заказать замер"
 						>
 							Заказать замер
 						</button>
@@ -187,7 +189,7 @@
 		</section>
 		<!-- /.hero-section -->
 
-		<section aria-labelledby="quiz-title" class="quiz-section">
+		<section aria-labelledby="quiz-title" class="quiz-section" id="quiz">
 			<div class="quiz-section__container container">
 				<div class="quiz-section__content">
 					<h2 id="quiz-title" class="quiz-section__title">
@@ -418,6 +420,8 @@
 							<header class="card__header">
 								<img
 									src="/assets/chernovoy-min.68edb73f.jpg"
+									width="600"
+									height="320"
 									alt=""
 									class="card__header-img"
 								/>
@@ -443,7 +447,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать черновой ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -453,6 +462,8 @@
 							<header class="card__header">
 								<img
 									src="/assets/kosmeticheskiy-min.f5f4388d.jpg"
+									width="600"
+									height="320"
 									alt=""
 									class="card__header-img"
 								/>
@@ -478,7 +489,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать косметический ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -488,6 +504,8 @@
 							<header class="card__header">
 								<img
 									src="/assets/kapitalny-min.5ba11259.jpg"
+									width="600"
+									height="320"
 									alt=""
 									class="card__header-img"
 								/>
@@ -513,7 +531,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать капитальный ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -523,6 +546,8 @@
 							<header class="card__header">
 								<img
 									src="/assets/dizainersky-min.4940a039.jpg"
+									width="600"
+									height="320"
 									alt=""
 									class="card__header-img"
 								/>
@@ -547,7 +572,12 @@
 							</div>
 							<!-- /.card__body -->
 							<div class="card__footer">
-								<button class="btn card__footer-btn">Заказать</button>
+								<button
+									class="btn card__footer-btn btn-open-form-modal"
+									data-info="Заказать дизайнерский ремонт"
+								>
+									Заказать
+								</button>
 								<!-- /.btn card__footer-btn -->
 							</div>
 							<!-- /.card__footer -->
@@ -569,7 +599,12 @@
 		>
 			<div class="questions-section__container container">
 				<div class="questions-section__img">
-					<img src="/assets/laser-min.ef29e346.png" alt="фотография лазера" />
+					<img
+						src="/assets/laser-min.ef29e346.png"
+						width="350"
+						height="100%"
+						alt="фотография лазера"
+					/>
 				</div>
 				<div class="questions-section__content content">
 					<h2 id="questions-title" class="content__title">
@@ -687,7 +722,12 @@
 		<section aria-labelledby="steps-title" id="steps" class="steps-section">
 			<div class="steps-section__container container">
 				<div class="steps-section__img">
-					<img src="/assets/hammer-min.f7dce859.png" alt="" />
+					<img
+						src="/assets/hammer-min.f7dce859.png"
+						width="470"
+						height="100%"
+						alt=""
+					/>
 				</div>
 				<!-- /.steps-section__img -->
 				<div class="steps-section__content content">
@@ -874,12 +914,22 @@
 								<!-- /.left__text-subtitle -->
 							</div>
 							<!-- /.left__text -->
-							<button class="left__btn btn">Вызвать сметчика</button>
+							<button
+								class="left__btn btn btn-open-form-modal"
+								data-info="Вызвать сметчика"
+							>
+								Вызвать сметчика
+							</button>
 							<!-- /.left__btn btn -->
 						</div>
 						<!-- /.content__left -->
 						<div class="content__img">
-							<img src="/assets/estimator-min.f09940a7.png" alt="" />
+							<img
+								src="/assets/estimator-min.f09940a7.png"
+								width="450"
+								height="100%"
+								alt="Фотография сметчика"
+							/>
 						</div>
 						<!-- /.content__img -->
 					</div>
@@ -905,7 +955,7 @@
 									<input
 										id="form-input-name"
 										type="text"
-										class="form__row-input"
+										class="form__row-input form__row-input--name"
 										placeholder="Ваше имя"
 									/>
 									<small class="form__row-error"
@@ -918,7 +968,7 @@
 									<input
 										id="form-input-phone"
 										type="text"
-										class="form__row-input"
+										class="form__row-input form__row-input--phone tel"
 										placeholder="Ваш телефон"
 									/>
 									<small class="form__row-error"
@@ -933,6 +983,7 @@
 										type="checkbox"
 										class="form__row-checkbox"
 										checked
+										required
 									/>
 									<label for="form-checkbox-agree" class="form__row-agree">
 										Я согласен на обработку персональных данных
@@ -950,7 +1001,9 @@
 					<div class="content__right">
 						<img
 							src="/assets/question-girl-min.0b3e2611.png"
-							alt=""
+							width="350"
+							height="100%"
+							alt="Девушка из call центра"
 							class="content__right-img"
 						/>
 					</div>
@@ -962,10 +1015,10 @@
 		</section>
 		<!-- /#contact.contact-section -->
 
-		<section id="map" class="map-section">
+		<section aria-labelledby="map-title" id="map" class="map-section">
 			<div class="map-section__container container">
 				<div class="map-section__content content">
-					<h2 class="content__title"></h2>
+					<h2 id="map-title" class="content__title">Контакты</h2>
 					<!-- /.content__title -->
 					<div class="content__contacts contacts">
 						<div class="contacts__row">
@@ -1006,19 +1059,204 @@
 					<!-- /.content__contacts contacts -->
 				</div>
 				<!-- /.map-section__content content -->
+				<iframe
+					class="map-section__yandex-map"
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cc187e637b7553e13755d83222fd4b3ea2d4febbc0e0aff695105f30418ede2&amp;source=constructor"
+					width="100%"
+					height="400"
+					frameborder="0"
+				></iframe>
 			</div>
 			<!-- /.map-section__container container -->
 		</section>
 		<!-- /#map.map-section -->
 
-		<iframe
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A06fd91523efdd425f725f73700896853ef29f7d85219cd6f6cd679246fd8447b&amp;source=constructor"
-			width="1200"
-			height="650"
-			frameborder="0"
-		></iframe>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__content content">
+					<div class="content__logo">
+						<img
+							src="/assets/header-logo.4ecd679e.svg"
+							alt="логотип Хо Ремонт"
+							class="content__logo-img"
+						/>
+					</div>
+					<!-- /.content__logo -->
+					<div class="content__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#advantages" class="nav__link">Преимущества</a>
+								<!-- /.nav__link -->
+							</li>
+							<!-- /.nav__item -->
+							<li class="nav__item">
+								<a href="#services" class="nav__link">Услуги</a>
+								<!-- /.nav__link -->
+							</li>
+							<!-- /.nav__item -->
+							<li class="nav__item">
+								<a href="#sales" class="nav__link">Акции </a>
+								<!-- /.nav__link -->
+							</li>
+							<!-- /.nav__item -->
+							<li class="nav__item">
+								<a href="#questions" class="nav__link">Вопросы</a>
+								<!-- /.nav__link -->
+							</li>
+							<!-- /.nav__item -->
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">Контакты</a>
+								<!-- /.nav__link -->
+							</li>
+							<!-- /.nav__item -->
+						</ul>
+						<!-- /.nav__list -->
+					</div>
+					<!-- /.content__nav nav -->
+					<div class="content__actions">
+						<div class="content__actions-btns actions-block">
+							<a
+								class="btn actions-block__btn actions-block__btn--primary"
+								href="#quiz"
+							>
+								Рассчитать стоимость</a
+							><a
+								href="#estimator"
+								class="btn actions-block__btn actions-block__btn--secondary"
+							>
+								Вызвать сметчика
+							</a>
+						</div>
+						<!-- /.content__actions-btn -->
+						<small id="footer-copy" class="content__copy"
+							>©️ 2022 - Все права защищены</small
+						>
+						<!-- /.content__copy -->
+					</div>
+					<!-- /.content__actions -->
+				</div>
+				<!-- /.footer__content content -->
+			</div>
+			<!-- /.footer__container container -->
+		</footer>
+		<!-- /.footer -->
 
-		<div id="overlay"></div>
+		<div class="modal" id="modal">
+			<div class="modal__content">
+				<div class="modal__header header-modal">
+					<h3 class="header-modal__title">Заголовок модального</h3>
+					<!-- /.header-modal__title -->
+					<button class="header-modal__close">
+						<img
+							src="/assets/plus.29975edc.svg"
+							alt=""
+							class="header-modal__close-img"
+						/>
+					</button>
+					<!-- /.header-modal__close -->
+				</div>
+				<!-- /.modal__header -->
+				<div class="modal__body">
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+						explicabo illo laudantium nisi provident. Quaerat, in dicta impedit
+						minus autem nemo obcaecati praesentium repudiandae aspernatur ex
+						possimus ipsam nihil laboriosam.
+					</p>
+				</div>
+				<!-- /.modal__body -->
+				<div class="modal__footer footer-modal">
+					<button class="btn footer-modal__action">Действие</button>
+					<!-- /.btn footer-model__action -->
+					<button class="btn footer-modal__close">Закрыть</button>
+					<!-- /.btn footer-model__close -->
+				</div>
+				<!-- /.modal__footer -->
+			</div>
+			<!-- /.modal__content -->
+		</div>
+		<!-- /#modal.modal -->
+
+		<div class="modal modal-form" id="modal-form">
+			<div class="modal__content">
+				<div class="modal__header header-modal">
+					<h3 class="header-modal__title">Заголовок модального</h3>
+					<!-- /.header-modal__title -->
+					<button class="header-modal__close">
+						<img
+							src="/assets/plus.29975edc.svg"
+							alt=""
+							class="header-modal__close-img"
+						/>
+					</button>
+					<!-- /.header-modal__close -->
+				</div>
+				<!-- /.modal__header -->
+				<div class="modal__body">
+					<form class="left__form form">
+						<div class="form__inputs">
+							<div class="form__row">
+								<input
+									id="form-input-name"
+									type="text"
+									class="form__row-input form__row-input--name"
+									placeholder="Ваше имя"
+								/>
+								<small class="form__row-error"
+									>Это поле является обязательным для заполнения</small
+								>
+								<!-- /.form__row-error -->
+							</div>
+							<!-- /.form__row -->
+							<div class="form__row">
+								<input
+									id="form-input-phone"
+									type="text"
+									class="form__row-input form__row-input--phone tel"
+									placeholder="Ваш телефон"
+								/>
+								<small class="form__row-error"
+									>Это поле является обязательным для заполнения</small
+								>
+								<!-- /.form__row-error -->
+							</div>
+							<!-- /.form__row -->
+							<div class="form__row form__row--checkbox">
+								<input
+									id="form-checkbox-agree"
+									type="checkbox"
+									class="form__row-checkbox"
+									checked
+									required
+								/>
+								<label for="form-checkbox-agree" class="form__row-agree">
+									Я согласен на обработку персональных данных
+								</label>
+							</div>
+							<!-- /.form__row form__row--checkbox -->
+						</div>
+						<!-- /.form__inputs -->
+						<button class="btn form__submit">Отправить</button>
+						<!-- /.btn form__submit -->
+					</form>
+					<!-- /.left__form form -->
+				</div>
+				<!-- /.modal__body -->
+				<div class="modal__footer footer-modal">
+					<button class="btn footer-modal__action">Действие</button>
+					<!-- /.btn footer-model__action -->
+					<button class="btn footer-modal__close">Закрыть</button>
+					<!-- /.btn footer-model__close -->
+				</div>
+				<!-- /.modal__footer -->
+			</div>
+			<!-- /.modal__content -->
+		</div>
+		<!-- /#modal.modal -->
+
+		<div id="overlay">
+			<div class="loader"></div>
+		</div>
 
 		
 	</body>
