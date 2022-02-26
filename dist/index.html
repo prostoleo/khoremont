@@ -33,7 +33,7 @@
 		<link rel="modulepreload" href="/assets/vendor.749cf4e8.493f35f6.js" async />
 		<script type="module" crossorigin src="/assets/index.4f733466.js"></script>
 		<link rel="modulepreload" href="/assets/vendor.2331be84.js">
-		<link rel="stylesheet" href="/assets/index.524d7b56.css">
+		<link rel="stylesheet" href="/assets/index.ee5f1dd0.css">
 	</head>
 	<body>
 		<header class="header">
@@ -188,6 +188,7 @@
 						src="/assets/hero-img-min.75d7a263.jpg"
 						alt="счастливые заказчики"
 						class="right-col__img"
+						data-load-img
 					/>
 				</div>
 				<!-- /.hero-section__right-col right-col -->
@@ -431,6 +432,7 @@
 									height="320"
 									alt="услуга - черновой ремонт"
 									class="card__header-img"
+									data-load-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -473,6 +475,7 @@
 									height="320"
 									alt="услуга - косметиеский ремонт"
 									class="card__header-img"
+									data-load-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -515,6 +518,7 @@
 									height="320"
 									alt="услуга - капитальный ремонт"
 									class="card__header-img"
+									data-load-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -557,6 +561,7 @@
 									height="320"
 									alt="услуга - дизайнерский ремонт"
 									class="card__header-img"
+									data-load-img
 								/>
 							</header>
 							<!-- /.card__header -->
@@ -611,6 +616,7 @@
 						width="350"
 						height="100%"
 						alt="фотография лазера"
+						data-load-img
 					/>
 				</div>
 				<div class="questions-section__content content">
@@ -734,6 +740,7 @@
 						width="470"
 						height="465"
 						alt="изображение молотка"
+						data-load-img
 					/>
 				</div>
 				<!-- /.steps-section__img -->
@@ -936,6 +943,7 @@
 								width="450"
 								height="100%"
 								alt="Фотография сметчика"
+								data-load-img
 							/>
 						</div>
 						<!-- /.content__img -->
@@ -1012,6 +1020,7 @@
 							height="100%"
 							alt="Девушка из call центра"
 							class="content__right-img"
+							data-load-img
 						/>
 					</div>
 					<!-- /.content__right -->
@@ -1266,8 +1275,8 @@
 		</div>
 		<!-- /#modal.modal -->
 
-		<div id="overlay">
-			<div class="loader"></div>
+		<div id="overlay" style="opacity: 1; visibility: visible">
+			<div class="loader" style="display: block"></div>
 		</div>
 
 		<script>
@@ -1323,6 +1332,16 @@
 				}
 
 				lazyLoadIframes();
+
+				function loadImages() {
+					const imgsToLoad = document.querySelectorAll('img[data-img-load]');
+
+					imgsToLoad.forEach((imgItem) => {
+						imgItem.src = imgItem.getAttribute('src');
+					});
+				}
+
+				loadImages();
 			});
 		</script>
 		

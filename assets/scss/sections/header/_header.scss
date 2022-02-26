@@ -91,6 +91,7 @@
 .nav-header {
 	perspective: 200px;
 	transform-style: preserve-3d;
+	z-index: 0;
 
 	@include mq(med) {
 		display: flex;
