@@ -18,7 +18,8 @@
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-	z-index: 3000;
+	// z-index: 3000;
+	z-index: 3;
 
 	cursor: pointer;
 
@@ -35,7 +36,7 @@
 
 body {
 	background: $body-bg;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	scroll-behavior: smooth;
 }
 

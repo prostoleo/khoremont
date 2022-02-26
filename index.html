@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Хоремонт</title>
+		<title>ХоРемонт</title>
 
 		<!-- quiz css -->
 		<!-- <link rel="stylesheet" href="/quiz/assets/index.9fbf7eeb.css" /> -->
@@ -57,19 +57,26 @@
 		<!-- google font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+		<!-- <link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&display=fallback"
 			rel="stylesheet"
+		/> -->
+		<link
+			rel="stylesheet"
+			media="print"
+			onload="this.onload=null;this.removeAttribute('media');"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&display=fallback"
 		/>
 
 		<!-- quiz -->
-		<link rel="stylesheet" href="/quiz/assets/index.9fbf7eeb.css" />
+		<!-- <link rel="stylesheet" href="/quiz/assets/index.9fbf7eeb.css" /> -->
+		<!-- async -->
 		<script
 			type="module"
 			crossorigin
 			src="/quiz/assets/index.c12a0073.js"
 		></script>
-		<link rel="modulepreload" href="/quiz/assets/vendor.749cf4e8.js" />
+		<link rel="modulepreload" href="/quiz/assets/vendor.749cf4e8.js" async />
 	</head>
 	<body>
 		<header class="header">
@@ -77,7 +84,7 @@
 				<div class="header__logo">
 					<img
 						src="./assets/img/header-logo.svg"
-						alt=""
+						alt="логотип"
 						class="header__logo-img"
 					/>
 				</div>
@@ -160,7 +167,7 @@
 			<div class="hero-section__roller">
 				<img
 					src="./assets/img/roller-img-min.png"
-					alt=""
+					alt="изображение валика с краской"
 					class="hero-section__roller-img"
 				/>
 			</div>
@@ -263,7 +270,7 @@
 						Наши преимущества
 						<img
 							src="/assets/img/icons/thumb.svg"
-							alt=""
+							alt="иконка пальца вверх"
 							class="content__title-icon"
 						/>
 					</h2>
@@ -274,7 +281,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/waranthy.svg"
-										alt=""
+										alt="иконка гарантии"
 										class="card__icon-img"
 									/>
 								</div>
@@ -305,7 +312,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/specialist.svg"
-										alt=""
+										alt="иконка специалиста"
 										class="card__icon-img"
 									/>
 								</div>
@@ -332,7 +339,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/technology.svg"
-										alt=""
+										alt="иконка технологий"
 										class="card__icon-img"
 									/>
 								</div>
@@ -359,7 +366,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/materials.svg"
-										alt=""
+										alt="иконка качественные материалы"
 										class="card__icon-img"
 									/>
 								</div>
@@ -386,7 +393,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/details.svg"
-										alt=""
+										alt="иконка детали"
 										class="card__icon-img"
 									/>
 								</div>
@@ -412,7 +419,7 @@
 								<div class="card__icon">
 									<img
 										src="/assets/img/icons/list.svg"
-										alt=""
+										alt="иконка список"
 										class="card__icon-img"
 									/>
 								</div>
@@ -453,7 +460,7 @@
 						Услуги
 						<img
 							src="/assets/img/icons/repair.svg"
-							alt=""
+							alt="иконка ремонта"
 							class="content__title-icon"
 						/>
 					</h2>
@@ -465,7 +472,7 @@
 									src="/assets/img/chernovoy-min.jpg"
 									width="600"
 									height="320"
-									alt=""
+									alt="услуга - черновой ремонт"
 									class="card__header-img"
 								/>
 							</header>
@@ -507,7 +514,7 @@
 									src="/assets/img/kosmeticheskiy-min.jpg"
 									width="600"
 									height="320"
-									alt=""
+									alt="услуга - косметиеский ремонт"
 									class="card__header-img"
 								/>
 							</header>
@@ -549,7 +556,7 @@
 									src="/assets/img/kapitalny-min.jpg"
 									width="600"
 									height="320"
-									alt=""
+									alt="услуга - капитальный ремонт"
 									class="card__header-img"
 								/>
 							</header>
@@ -591,7 +598,7 @@
 									src="/assets/img/dizainersky-min.jpg"
 									width="600"
 									height="320"
-									alt=""
+									alt="услуга - дизайнерский ремонт"
 									class="card__header-img"
 								/>
 							</header>
@@ -768,8 +775,8 @@
 					<img
 						src="/assets/img/hammer-min.png"
 						width="470"
-						height="100%"
-						alt=""
+						height="465"
+						alt="изображение молотка"
 					/>
 				</div>
 				<!-- /.steps-section__img -->
@@ -787,7 +794,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -802,7 +809,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -817,7 +824,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -832,7 +839,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -847,7 +854,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -864,7 +871,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -879,7 +886,7 @@
 							<div class="item__arrow">
 								<img
 									src="/assets/img/icons/arrow.svg"
-									alt=""
+									alt="иконка стрелки"
 									class="item__arrow-img"
 								/>
 							</div>
@@ -902,7 +909,7 @@
 					<!-- /.content__title -->
 					<div class="content__sales">
 						<div class="content__sales-img">
-							<img src="/assets/img/icons/sale.svg" alt="" />
+							<img src="/assets/img/icons/sale.svg" alt="иконка скидки" />
 						</div>
 						<div class="content__sales-item item">
 							<!-- /.item__number -->
@@ -1066,7 +1073,7 @@
 					<div class="content__contacts contacts">
 						<div class="contacts__row">
 							<div class="contacts__icon">
-								<img src="/assets/img/icons/phone.svg" alt="" />
+								<img src="/assets/img/icons/phone.svg" alt="иконка телефона" />
 							</div>
 							<!-- /.contacts__icon -->
 							<a href="callto:84997777777" class="contacts__text"
@@ -1077,7 +1084,10 @@
 						<!-- /.contacts__row -->
 						<div class="contacts__row">
 							<div class="contacts__icon">
-								<img src="/assets/img/icons/pin.svg" alt="" />
+								<img
+									src="/assets/img/icons/pin.svg"
+									alt="иконка - точка на карте"
+								/>
 							</div>
 							<!-- /.contacts__icon -->
 							<span class="contacts__text"
@@ -1089,7 +1099,7 @@
 						<!-- /.contacts__row -->
 						<div class="contacts__row">
 							<div class="contacts__icon">
-								<img src="/assets/img/icons/mail.svg" alt="" />
+								<img src="/assets/img/icons/mail.svg" alt="иконка почты" />
 							</div>
 							<!-- /.contacts__icon -->
 							<a href="mailto:horoshi-remont@yandex.ru" class="contacts__text"
@@ -1102,9 +1112,11 @@
 					<!-- /.content__contacts contacts -->
 				</div>
 				<!-- /.map-section__content content -->
+				<!-- loading="lazy" -->
 				<iframe
+					title="Местоположение на Яндекс картах"
 					class="map-section__yandex-map"
-					src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cc187e637b7553e13755d83222fd4b3ea2d4febbc0e0aff695105f30418ede2&amp;source=constructor"
+					data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cc187e637b7553e13755d83222fd4b3ea2d4febbc0e0aff695105f30418ede2&amp;source=constructor"
 					width="100%"
 					height="400"
 					frameborder="0"
@@ -1192,7 +1204,7 @@
 					<button class="header-modal__close">
 						<img
 							src="/assets/img/icons/plus.svg"
-							alt=""
+							alt="иконка плюс"
 							class="header-modal__close-img"
 						/>
 					</button>
@@ -1228,7 +1240,7 @@
 					<button class="header-modal__close">
 						<img
 							src="/assets/img/icons/plus.svg"
-							alt=""
+							alt="иконка плюс"
 							class="header-modal__close-img"
 						/>
 					</button>
@@ -1240,7 +1252,7 @@
 						<div class="form__inputs">
 							<div class="form__row">
 								<input
-									id="form-input-name"
+									id="modal-form-input-name"
 									type="text"
 									class="form__row-input form__row-input--name"
 									placeholder="Ваше имя"
@@ -1253,7 +1265,7 @@
 							<!-- /.form__row -->
 							<div class="form__row">
 								<input
-									id="form-input-phone"
+									id="modal-form-input-phone"
 									type="text"
 									class="form__row-input form__row-input--phone tel"
 									placeholder="Ваш телефон"
@@ -1266,7 +1278,7 @@
 							<!-- /.form__row -->
 							<div class="form__row form__row--checkbox">
 								<input
-									id="form-checkbox-agree"
+									id="modal-form-checkbox-agree"
 									type="checkbox"
 									class="form__row-checkbox"
 									checked
@@ -1301,6 +1313,61 @@
 			<div class="loader"></div>
 		</div>
 
+		<script>
+			window.addEventListener('load', function () {
+				function lazy_load_css(path) {
+					//The function responsible for lazy loading our css files
+					const type_of_path = typeof path; //This refers to the type of the path. It can be string or object
+					switch (type_of_path) {
+						case 'object':
+							const head = document.getElementsByTagName('head')[0]; //Get's the head element
+
+							path.forEach((pathItem) => {
+								//Loops through all the paths
+								const link = document.createElement('link'); //Creates a link element
+								link.href = path[i]; //Assigns a path to the tag
+								link.rel = 'stylesheet'; //Set it's rel to stylesheet
+								link.type = 'text/css'; //Set's it's type to text/css
+								head.appendChild(link); //Appends it to the head of the document.
+							});
+
+							break;
+						case 'string': //If the path is a single path
+							const headEl = document.getElementsByTagName('head')[0]; //Get the head element from the html document
+							const link = document.createElement('link'); //Create the link element
+							link.href = path; //Assign the value of path to the link's href
+							link.rel = 'stylesheet'; //Assign 'stylesheet' to the link
+							link.type = 'text/css';
+							headEl.appendChild(link); //Appends the link to the head of the document.
+							break;
+					}
+				}
+
+				// lazy_load_css('/quiz/assets/index.9fbf7eeb.css');
+
+				function lazyLoadIframes() {
+					const iframes = document.querySelectorAll('iframe[data-src]');
+
+					if (!iframes) return;
+
+					const type_of_path = typeof iframes; //This refers to the type of the path. It can be string or object
+					switch (type_of_path) {
+						case 'object':
+							iframes.forEach((iframe, i) => {
+								//Loops through all the paths
+								iframe.setAttribute('src', iframe.dataset.src);
+							});
+
+							break;
+						case 'string': //If the path is a single path
+							iframes.setAttribute('src', iframes.dataset.src);
+							break;
+					}
+				}
+
+				lazyLoadIframes();
+			});
+		</script>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

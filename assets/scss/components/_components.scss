@@ -29,6 +29,8 @@
 
 	border: 1px solid transparent;
 
+	text-align: center;
+
 	&--primary {
 		background: $accent-light;
 		color: $main-text;
@@ -191,4 +193,6 @@
 	@include adaptive-value-min-max(font-size, 16, 20);
 	font-weight: 600;
 	background: $main-primary;
+
+	text-align: center;
 }
