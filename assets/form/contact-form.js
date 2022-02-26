@@ -21,7 +21,7 @@ export default function contactForm() {
 		contactSectionEl.getAttribute('aria-label') ??
 		document.getElementById(contactSectionEl.getAttribute('aria-labelledby'))
 			.textContent;
-	console.log('title: ', title);
+	// console.log('title: ', title);
 
 	maskPhone();
 	handleForm(formInContactSection, title, '#modal');

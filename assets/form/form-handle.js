@@ -83,7 +83,7 @@ export default function foo(formEl, title, selector) {
 			/* const formRow = input.closest('.form__row');
 			const errorMsgEl = formRow.querySelector('small.form__row-error'); */
 			validData.phone.touched = true;
-			console.log('input.value.trim().length: ', input.value.trim().length);
+			// console.log('input.value.trim().length: ', input.value.trim().length);
 
 			//* if inputPhone valid
 			if (input.value.trim() && input.value.trim().length === 18) {
@@ -144,7 +144,7 @@ export default function foo(formEl, title, selector) {
 				phone: inputPhoneEl.value.trim(),
 				title,
 			};
-			console.log('dataToSubmit: ', dataToSubmit);
+			// console.log('dataToSubmit: ', dataToSubmit);
 
 			const start = +new Date();
 			showLoader();

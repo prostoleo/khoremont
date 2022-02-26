@@ -5,10 +5,10 @@
 		<link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ХоРемонт</title>
-
-		<!-- quiz css -->
-		<!-- <link rel="stylesheet" href="/quiz/assets/index.9fbf7eeb.css" /> -->
-		<!-- <link rel="stylesheet" href="/assets/scss/main.scss" /> -->
+		<meta
+			name="description"
+			content="Ремонт квартир в Москве и Московской области от профессионалов. Гарантия на ремонт 1.5 года. Все виды ремонта: черновой, косметический, капитальный. Подарок за прохождение опроса!"
+		/>
 
 		
 
@@ -30,8 +30,8 @@
 		<!-- <link rel="stylesheet" href="/quiz/assets/index.9fbf7eeb.css" /> -->
 		<!-- async -->
 		
-		<link rel="modulepreload" href="/assets/vendor.749cf4e8.493f35f6.js" async />
-		<script type="module" crossorigin src="/assets/index.4f733466.js"></script>
+		<link rel="modulepreload" href="/assets/vendor.749cf4e8.493f35f6.js" defer />
+		<script type="module" crossorigin src="/assets/index.4c608f1c.js"></script>
 		<link rel="modulepreload" href="/assets/vendor.2331be84.js">
 		<link rel="stylesheet" href="/assets/index.ee5f1dd0.css">
 	</head>
@@ -167,7 +167,7 @@
 					</div>
 					<!-- /.left-col__pluses pluses -->
 					<div class="left-col__btn-row btn-row">
-						<a href="#quiz" class="btn-row__btn btn-row__btn--primary">
+						<a href="#quiz-section" class="btn-row__btn btn-row__btn--primary">
 							Рассчитать стоимость
 						</a>
 						<!-- /.btn-row__btn btn-row__btn--primary -->
@@ -184,12 +184,16 @@
 				<!-- /.hero-section__left-col left-col -->
 
 				<div class="hero-section__right-col right-col">
-					<img
-						src="/assets/hero-img-min.75d7a263.jpg"
-						alt="счастливые заказчики"
-						class="right-col__img"
-						data-load-img
-					/>
+					<picture>
+						<source srcset="/assets/hero-img-min.d84f6c87.webp " type="image/webp" />
+						<source srcset="/assets/hero-img-min.75d7a263.jpg " type="image/jpeg" />
+						<img
+							src="/assets/hero-img-min.75d7a263.jpg"
+							alt="счастливые заказчики"
+							class="right-col__img"
+							data-load-img
+						/>
+					</picture>
 				</div>
 				<!-- /.hero-section__right-col right-col -->
 			</div>
@@ -197,7 +201,11 @@
 		</section>
 		<!-- /.hero-section -->
 
-		<section aria-labelledby="quiz-title" class="quiz-section" id="quiz">
+		<section
+			aria-labelledby="quiz-title"
+			class="quiz-section"
+			id="quiz-section"
+		>
 			<div class="quiz-section__container container">
 				<div class="quiz-section__content">
 					<h2 id="quiz-title" class="quiz-section__title">
@@ -426,14 +434,23 @@
 					<ul class="content__cards">
 						<li class="content__cards-item card">
 							<header class="card__header">
-								<img
-									src="/assets/chernovoy-min.68edb73f.jpg"
-									width="600"
-									height="320"
-									alt="услуга - черновой ремонт"
-									class="card__header-img"
-									data-load-img
-								/>
+								<picture>
+									<source
+										srcset="/assets/chernovoy-min.9ee0a68e.webp "
+										type="image/webp"
+									/>
+									<source
+										srcset="/assets/chernovoy-min.68edb73f.jpg "
+										type="image/jpeg"
+									/>
+									<img
+										src="/assets/chernovoy-min.68edb73f.jpg"
+										width="600"
+										height="320"
+										alt="услуга - черновой ремонт"
+										class="card__header-img"
+									/>
+								</picture>
 							</header>
 							<!-- /.card__header -->
 							<div class="card__body">
@@ -469,14 +486,23 @@
 						<!-- /.content__cards-item card -->
 						<li class="content__cards-item card">
 							<header class="card__header">
-								<img
-									src="/assets/kosmeticheskiy-min.f5f4388d.jpg"
-									width="600"
-									height="320"
-									alt="услуга - косметиеский ремонт"
-									class="card__header-img"
-									data-load-img
-								/>
+								<picture>
+									<source
+										srcset="/assets/kosmeticheskiy-min.7255a3f7.webp "
+										type="image/webp"
+									/>
+									<source
+										srcset="/assets/kosmeticheskiy-min.f5f4388d.jpg "
+										type="image/jpeg"
+									/>
+									<img
+										src="/assets/kosmeticheskiy-min.f5f4388d.jpg"
+										width="600"
+										height="320"
+										alt="услуга - косметический ремонт"
+										class="card__header-img"
+									/>
+								</picture>
 							</header>
 							<!-- /.card__header -->
 							<div class="card__body">
@@ -512,14 +538,23 @@
 						<!-- /.content__cards-item card -->
 						<li class="content__cards-item card">
 							<header class="card__header">
-								<img
-									src="/assets/kapitalny-min.5ba11259.jpg"
-									width="600"
-									height="320"
-									alt="услуга - капитальный ремонт"
-									class="card__header-img"
-									data-load-img
-								/>
+								<picture>
+									<source
+										srcset="/assets/kapitalny-min.e3320bde.webp "
+										type="image/webp"
+									/>
+									<source
+										srcset="/assets/kapitalny-min.5ba11259.jpg "
+										type="image/jpeg"
+									/>
+									<img
+										src="/assets/kapitalny-min.5ba11259.jpg"
+										width="600"
+										height="320"
+										alt="услуга - капитальный ремонт"
+										class="card__header-img"
+									/>
+								</picture>
 							</header>
 							<!-- /.card__header -->
 							<div class="card__body">
@@ -555,14 +590,23 @@
 						<!-- /.content__cards-item card -->
 						<li class="content__cards-item card">
 							<header class="card__header">
-								<img
-									src="/assets/dizainersky-min.4940a039.jpg"
-									width="600"
-									height="320"
-									alt="услуга - дизайнерский ремонт"
-									class="card__header-img"
-									data-load-img
-								/>
+								<picture>
+									<source
+										srcset="/assets/dizainersky-min.88ef1cc1.webp "
+										type="image/webp"
+									/>
+									<source
+										srcset="/assets/dizainersky-min.4940a039.jpg "
+										type="image/jpeg"
+									/>
+									<img
+										src="/assets/dizainersky-min.4940a039.jpg"
+										width="600"
+										height="320"
+										alt="услуга - дизайнерский ремонт"
+										class="card__header-img"
+									/>
+								</picture>
 							</header>
 							<!-- /.card__header -->
 							<div class="card__body">
@@ -611,13 +655,16 @@
 		>
 			<div class="questions-section__container container">
 				<div class="questions-section__img">
-					<img
-						src="/assets/laser-min.ef29e346.png"
-						width="350"
-						height="100%"
-						alt="фотография лазера"
-						data-load-img
-					/>
+					<picture>
+						<source srcset="/assets/laser-min.54cb40e3.webp " type="image/webp" />
+						<source srcset="/assets/laser-min.ef29e346.png " type="image/png" />
+						<img
+							src="/assets/laser-min.ef29e346.png"
+							width="350"
+							height="100%"
+							alt="фотография лазера"
+						/>
+					</picture>
 				</div>
 				<div class="questions-section__content content">
 					<h2 id="questions-title" class="content__title">
@@ -735,13 +782,16 @@
 		<section aria-labelledby="steps-title" id="steps" class="steps-section">
 			<div class="steps-section__container container">
 				<div class="steps-section__img">
-					<img
-						src="/assets/hammer-min.f7dce859.png"
-						width="470"
-						height="465"
-						alt="изображение молотка"
-						data-load-img
-					/>
+					<picture>
+						<source srcset="/assets/hammer-min.fb27ab9f.webp " type="image/webp" />
+						<source srcset="/assets/hammer-min.f7dce859.png " type="image/png" />
+						<img
+							src="/assets/hammer-min.f7dce859.png"
+							width="470"
+							height="465"
+							alt="изображение молотка"
+						/>
+					</picture>
 				</div>
 				<!-- /.steps-section__img -->
 				<div class="steps-section__content content">
@@ -938,13 +988,22 @@
 						</div>
 						<!-- /.content__left -->
 						<div class="content__img">
-							<img
-								src="/assets/estimator-min.f09940a7.png"
-								width="450"
-								height="100%"
-								alt="Фотография сметчика"
-								data-load-img
-							/>
+							<picture>
+								<source
+									srcset="/assets/estimator-min.990707c6.webp "
+									type="image/webp"
+								/>
+								<source
+									srcset="/assets/estimator-min.f09940a7.png "
+									type="image/png"
+								/>
+								<img
+									src="/assets/estimator-min.f09940a7.png"
+									width="450"
+									height="100%"
+									alt="Фотография сметчика"
+								/>
+							</picture>
 						</div>
 						<!-- /.content__img -->
 					</div>
@@ -1014,14 +1073,23 @@
 					</div>
 					<!-- /.content__left -->
 					<div class="content__right">
-						<img
-							src="/assets/question-girl-min.0b3e2611.png"
-							width="350"
-							height="100%"
-							alt="Девушка из call центра"
-							class="content__right-img"
-							data-load-img
-						/>
+						<picture>
+							<source
+								srcset="/assets/question-girl-min.9a619944.webp "
+								type="image/webp"
+							/>
+							<source
+								srcset="/assets/question-girl-min.0b3e2611.png "
+								type="image/png"
+							/>
+							<img
+								src="/assets/question-girl-min.0b3e2611.png"
+								width="350"
+								height="100%"
+								alt="Девушка из call центра"
+								class="content__right-img"
+							/>
+						</picture>
 					</div>
 					<!-- /.content__right -->
 				</div>
@@ -1138,7 +1206,7 @@
 						<div class="content__actions-btns actions-block">
 							<a
 								class="btn actions-block__btn actions-block__btn--primary"
-								href="#quiz"
+								href="#quiz-section"
 							>
 								Рассчитать стоимость</a
 							><a
@@ -1275,8 +1343,8 @@
 		</div>
 		<!-- /#modal.modal -->
 
-		<div id="overlay" style="opacity: 1; visibility: visible">
-			<div class="loader" style="display: block"></div>
+		<div id="overlay">
+			<div class="loader"></div>
 		</div>
 
 		<script>
@@ -1341,7 +1409,7 @@
 					});
 				}
 
-				loadImages();
+				// loadImages();
 			});
 		</script>
 		

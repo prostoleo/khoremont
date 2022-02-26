@@ -5,13 +5,13 @@ export default function handleModal(
 	selector = '',
 	withoutFooter = true
 ) {
-	console.log('selector: ', selector);
+	// console.log('selector: ', selector);
 
 	// если нет selector - выходим из функции
 	if (!selector) return;
 
 	const modalEl = document.querySelector(selector);
-	console.log('modalEl: ', modalEl);
+	// console.log('modalEl: ', modalEl);
 
 	const modalContentEl = modalEl.querySelector('.modal__content');
 
