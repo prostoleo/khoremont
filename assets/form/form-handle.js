@@ -1,9 +1,9 @@
 // import uikit from ''
-import sendMail from '../sendMail/sendMail';
+// import sendMail from '../sendMail/sendMail';
 import handleModal from '../modal/modal-handle';
 import { showLoader, hideLoader } from '../loader/handleLoader';
 
-export default function foo(formEl, title, selector) {
+export default function handleForm(formEl, title, selector) {
 	const { openModal, closeModal } = handleModal(title, selector);
 
 	const modalEl = document.querySelector(selector);
@@ -121,6 +121,8 @@ export default function foo(formEl, title, selector) {
 
 	// submissionForm
 	async function submitForm(event) {
+		console.log(`submit`);
+		debugger;
 		let modalContentElInner = null;
 		try {
 			event.preventDefault();
@@ -132,25 +134,83 @@ export default function foo(formEl, title, selector) {
 
 			//* находим текущую открытую модалка и закрываем ее
 			const { openModal: openCurrentModal, closeModal: closeCurrentModal } =
-				handleModal(null, '.modal.open');
+				handleModal(null, '.modal-form');
 
 			closeCurrentModal();
 
 			modalContentEl.classList.add('without-footer');
 
 			// данные для отправки
-			const dataToSubmit = {
+			/* const dataToSubmit = {
 				name: inputNameEl.value.trim(),
+				// email: `не указан`,
+				// subjec
 				phone: inputPhoneEl.value.trim(),
 				title,
+			}; */
+			const dataToSubmit = {
+				name: inputNameEl.value.trim(),
+				email: `не указан`,
+				phone: inputPhoneEl.value.trim(),
+				subject: `Заявка с сайта renovation-khoremont`,
+				fromWebsite: `https://khoremont-renovation.netlify.app/`,
+				// title,
 			};
-			// console.log('dataToSubmit: ', dataToSubmit);
+			/* const dataToSubmit = new FormData();
+
+			dataToSubmit.append('name', inputNameEl.value.trim());
+			dataToSubmit.append('email', `не указан`);
+			dataToSubmit.append('phone', inputPhoneEl.value.trim());
+			dataToSubmit.append('subject', `Заявка с сайта renovation-khoremont`);
+			dataToSubmit.append(
+				'fromWebsite',
+				`https://khoremont-renovation.netlify.app/`
+			); */
+			console.log('dataToSubmit: ', dataToSubmit);
 
 			const start = +new Date();
 			showLoader();
 
 			//* работает, потом раскомментить
-			const response = await sendMail(dataToSubmit);
+			// const response = await sendMail(dataToSubmit);
+
+			const response = await fetch(
+				`https://functions.yandexcloud.net/d4ektmdocmfsls83f9r4`,
+				{
+					method: 'POST',
+					headers: {
+						Accept: '/',
+						// 'Content-type': 'application/x-www-form-urlencoded',
+						// 'Content-Type': 'application/json; charset=utf-8',
+						// 'Content-Type': 'application/json',
+						'Content-Type': 'text/plain',
+					},
+					// body: dataToSubmit,
+					body: JSON.stringify(dataToSubmit),
+				}
+			);
+			/* axios({
+				method: 'post',
+				url: 'https://functions.yandexcloud.net/d4ektmdocmfsls83f9r4',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				data: {
+					name: inputNameEl.value.trim(),
+					email: `не указан`,
+					phone: inputPhoneEl.value.trim(),
+					subject: `Заявка с сайта renovation-khoremont`,
+					fromWebsite: `https://khoremont-renovation.netlify.app/`,
+				},
+			})
+				.then((response) => {
+					console.log('response: ', response);
+					// console.log();
+				})
+				.catch((err) => {
+					console.warn(err);
+				}); */
+
 			// isLoading.value = false;
 			// console.log('response: ', response);
 			const end = +new Date();
@@ -158,14 +218,20 @@ export default function foo(formEl, title, selector) {
 			const diff = Math.round((end - start) / 1000);
 			// console.log('diff: ', diff);
 
-			if (diff >= 15) {
-				throw new Error(' превышено время на запрос');
-			}
-
 			const {
 				openModal: openModalNotification,
 				closeModal: closeModalNotification,
 			} = handleModal(null, '#modal');
+
+			if (diff >= 15) {
+				throw new Error(' превышено время на запрос');
+			}
+
+			if (!response.ok) {
+				throw new Error(
+					`статус ${response.status}, сообщение: ${response.statusText}`
+				);
+			}
 
 			modalContentElInner = document.querySelector('#modal .modal__content');
 
@@ -181,6 +247,8 @@ export default function foo(formEl, title, selector) {
 			// console.log('formEl: ', formEl);
 		} catch (error) {
 			console.warn(`💣💣💣, произошла ошибка ${error?.message ?? error}`);
+
+			modalContentElInner = document.querySelector('#modal .modal__content');
 
 			modalContentElInner.querySelector('.modal__body p').textContent =
 				'Произошла какая-то ошибка. Попробуйте, пожалуйста, позже!';

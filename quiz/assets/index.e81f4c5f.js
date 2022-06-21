@@ -2,81 +2,81 @@ import {
 	o as c,
 	c as m,
 	r as U,
-	d as Q,
+	d as R,
 	a as i,
-	F as q,
-	b as A,
-	e as k,
+	F as A,
+	b as j,
+	e as w,
 	t as x,
 	f as y,
-	p as B,
-	g as F,
+	p as z,
+	g as B,
 	h as C,
-	i as z,
+	i as D,
 	w as I,
-	v as E,
+	v as q,
 	j as b,
-	k as R,
+	k as F,
 	u as n,
 	l as v,
-	m as T,
-	n as j,
-	U as Z,
+	m as E,
+	n as L,
+	U as Q,
 	q as V,
-	s as X,
-	x as K,
+	s as Z,
+	x as J,
 	y as M,
-	z as G,
-	T as J,
-	A as Y,
-	B as tt,
+	z as K,
+	T as G,
+	A as X,
+	B as Y,
 } from './vendor.749cf4e8.js';
-const et = function () {
+const tt = function () {
 	const t = document.createElement('link').relList;
 	if (t && t.supports && t.supports('modulepreload')) return;
-	for (const r of document.querySelectorAll('link[rel="modulepreload"]')) a(r);
+	for (const r of document.querySelectorAll('link[rel="modulepreload"]')) l(r);
 	new MutationObserver((r) => {
-		for (const l of r)
-			if (l.type === 'childList')
-				for (const u of l.addedNodes)
-					u.tagName === 'LINK' && u.rel === 'modulepreload' && a(u);
+		for (const a of r)
+			if (a.type === 'childList')
+				for (const u of a.addedNodes)
+					u.tagName === 'LINK' && u.rel === 'modulepreload' && l(u);
 	}).observe(document, { childList: !0, subtree: !0 });
-	function o(r) {
-		const l = {};
+	function s(r) {
+		const a = {};
 		return (
-			r.integrity && (l.integrity = r.integrity),
-			r.referrerpolicy && (l.referrerPolicy = r.referrerpolicy),
+			r.integrity && (a.integrity = r.integrity),
+			r.referrerpolicy && (a.referrerPolicy = r.referrerpolicy),
 			r.crossorigin === 'use-credentials'
-				? (l.credentials = 'include')
+				? (a.credentials = 'include')
 				: r.crossorigin === 'anonymous'
-				? (l.credentials = 'omit')
-				: (l.credentials = 'same-origin'),
-			l
+				? (a.credentials = 'omit')
+				: (a.credentials = 'same-origin'),
+			a
 		);
 	}
-	function a(r) {
+	function l(r) {
 		if (r.ep) return;
 		r.ep = !0;
-		const l = o(r);
-		fetch(r.href, l);
+		const a = s(r);
+		fetch(r.href, a);
 	}
 };
-et();
+tt();
 var S = (e, t) => {
-	const o = e.__vccOpts || e;
-	for (const [a, r] of t) o[a] = r;
-	return o;
+	const s = e.__vccOpts || e;
+	for (const [l, r] of t) s[l] = r;
+	return s;
 };
-const ot = {},
+const et = {},
 	st = {
 		class:
 			'shadow bg-blue-500 text-lg text-white font-semibold px-[1em] py-[0.5em] rounded-md',
 	};
-function nt(e, t) {
+function ot(e, t) {
 	return c(), m('button', st, [U(e.$slots, 'default')]);
 }
-var H = S(ot, [['render', nt]]);
-const O = Q({
+var N = S(et, [['render', ot]]);
+const O = R({
 		id: 'data',
 		state: () => ({
 			loading: !1,
@@ -92,13 +92,13 @@ const O = Q({
 							id: '1-1',
 							title:
 								'\u041D\u043E\u0432\u043E\u0441\u0442\u0440\u043E\u0439\u043A\u0430',
-							imgSrc: 'novostroika.jpg',
+							imgSrc: 'novostroika-min.jpg',
 						},
 						{
 							id: '1-2',
 							title:
 								'\u0412\u0442\u043E\u0440\u0438\u0447\u043D\u043E\u0435 \u0436\u0438\u043B\u044C\u0435',
-							imgSrc: 'vtorichka.jpg',
+							imgSrc: 'vtorichka-min.jpg',
 						},
 					],
 				},
@@ -169,25 +169,25 @@ const O = Q({
 						{
 							id: '5-1',
 							title: '\u0427\u0435\u0440\u043D\u043E\u0432\u043E\u0439',
-							imgSrc: 'chernovoy.jpg',
+							imgSrc: 'chernovoy-min.jpg',
 						},
 						{
 							id: '5-2',
 							title:
 								'\u041A\u043E\u0441\u043C\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439',
-							imgSrc: 'kosmeticheskiy.jpg',
+							imgSrc: 'kosmeticheskiy-min.jpg',
 						},
 						{
 							id: '5-3',
 							title:
 								'\u041A\u0430\u043F\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0439',
-							imgSrc: 'kapitalny.jpg',
+							imgSrc: 'kapitalny-min.jpg',
 						},
 						{
 							id: '5-4',
 							title:
 								'\u0414\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0441\u043A\u0438\u0439',
-							imgSrc: 'dizainersky.jpg',
+							imgSrc: 'dizainersky-min.jpg',
 						},
 					],
 				},
@@ -201,19 +201,19 @@ const O = Q({
 							id: '6-1',
 							title:
 								'\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u043A\u043E\u043D\u0441\u0443\u043B\u044C\u0442\u0430\u0446\u0438\u044F \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0430',
-							imgSrc: 'designer.jpg',
+							imgSrc: 'designer-min.jpg',
 						},
 						{
 							id: '6-2',
 							title:
 								'\u0420\u043E\u0431\u043E\u0442 \u043C\u043E\u0439\u0449\u0438\u043A \u043E\u043A\u043E\u043D',
-							imgSrc: 'robot.jpg',
+							imgSrc: 'robot-min.jpg',
 						},
 						{
 							id: '6-3',
 							title:
 								'\u0421\u043A\u0438\u0434\u043A\u0430 20% \u043D\u0430 \u0432\u043E\u0434\u043E\u0441\u043D\u0430\u0431\u0436\u0435\u043D\u0438\u0435',
-							imgSrc: 'vodoprovod.jpg',
+							imgSrc: 'vodoprovod-min.jpg',
 						},
 					],
 				},
@@ -246,11 +246,11 @@ const O = Q({
 			},
 			getDataForQuizSubmit: (e) =>
 				Object.values(e.data).reduce(
-					(o, a) => (
-						typeof a.chosenOption == 'string'
-							? (o[a.title] = a.chosenOption)
-							: (o[a.title] = a.chosenOption.join(';')),
-						o
+					(s, l) => (
+						typeof l.chosenOption == 'string'
+							? (s[l.title] = l.chosenOption)
+							: (s[l.title] = l.chosenOption.join(';')),
+						s
 					),
 					{}
 				),
@@ -276,88 +276,88 @@ const O = Q({
 				this.data[t].chosenOption = e;
 			},
 			clearChosenOption(e = !1, t) {
-				const o = this.getActiveIndex;
+				const s = this.getActiveIndex;
 				e
-					? (this.data[o].chosenOption = this.data[o].chosenOption.filter(
-							(a) => a !== t.title
+					? (this.data[s].chosenOption = this.data[s].chosenOption.filter(
+							(l) => l !== t.title
 					  ))
-					: (this.data[o].chosenOption = []);
+					: (this.data[s].chosenOption = []);
 			},
 		},
 	}),
-	it = {},
-	rt = {
+	nt = {},
+	it = {
 		class:
 			'uk-position-small uk-hidden-hover !text-black rounded-full w-9 h-9 p-2 inline-flex items-center justify-center shadow bg-white',
 		href: '#',
 		fill: 'black',
 	};
-function at(e, t) {
-	return c(), m('a', rt);
+function rt(e, t) {
+	return c(), m('a', it);
 }
-var N = S(it, [['render', at]]);
-const lt = (e) => (B('data-v-3dfbc7a0'), (e = e()), F(), e),
+var W = S(nt, [['render', rt]]);
+const at = (e) => (z('data-v-3dfbc7a0'), (e = e()), B(), e),
 	dt = {
 		class: 'uk-slider-container-offset mt-4',
 		'uk-slider': 'center: true; autoplay: true; autoplay-interval: 5000;',
 	},
-	ct = {
+	lt = {
 		class: 'uk-position-relative uk-visible-toggle uk-dark',
 		tabindex: '-1',
 	},
-	ut = { class: 'uk-slider-items uk-grid uk-grid-match' },
-	pt = ['onClick'],
-	mt = { class: 'uk-card-media-top border-b border-solid border-dark-50/40' },
-	ht = ['src'],
-	ft = { class: 'p-3 md:p-5' },
+	ct = { class: 'uk-slider-items uk-grid uk-grid-match' },
+	ut = ['onClick'],
+	pt = { class: 'uk-card-media-top border-b border-solid border-dark-50/40' },
+	mt = ['src'],
+	ht = { class: 'p-3 md:p-5' },
 	_t = { class: 'uk-card-title leading-tight mb-[0.5em]' },
-	gt = { key: 0 },
-	vt = { class: 'uk-slider-nav uk-dotnav justify-center mt-4' },
-	xt = ['uk-slider-item'],
-	yt = lt(() => i('a', { href: '#' }, null, -1)),
-	bt = [yt],
-	wt = {
+	ft = { key: 0 },
+	gt = { class: 'uk-slider-nav uk-dotnav justify-center mt-4' },
+	vt = ['uk-slider-item'],
+	xt = at(() => i('a', { href: '#' }, null, -1)),
+	yt = [xt],
+	bt = {
 		props: { dataStep: { type: Object, required: !0 } },
 		setup(e) {
 			const t = e,
-				o = '.my-slider-card',
-				a = O();
+				s = '.my-slider-card',
+				l = O();
 			function r(u, g) {
-				const d = g.target.closest(o);
+				const d = g.target.closest(s);
 				if (!!d) {
 					if (t.dataStep.type === 'slider-radio') {
 						d.classList.contains('chosen')
-							? (d.classList.remove('chosen'), a.clearChosenOption())
-							: (l(),
-							  a.clearChosenOption(),
+							? (d.classList.remove('chosen'), l.clearChosenOption())
+							: (a(),
+							  l.clearChosenOption(),
 							  d.classList.add('chosen'),
-							  a.setChosenOption(u));
+							  l.setChosenOption(u));
 						return;
 					}
 					if (t.dataStep.type === 'slider-checkbox') {
 						d.classList.contains('chosen')
-							? (d.classList.remove('chosen'), a.clearChosenOption(!0, u))
-							: (d.classList.add('chosen'), a.setChosenOption(u));
+							? (d.classList.remove('chosen'), l.clearChosenOption(!0, u))
+							: (d.classList.add('chosen'), l.setChosenOption(u));
 						return;
 					}
 				}
 			}
-			function l() {
+			function a() {
 				document
-					.getElementById(`step-${a.getActiveIndex}`)
-					.querySelectorAll(o)
+					.getElementById(`step-${l.getActiveIndex}`)
+					.querySelectorAll(s)
 					.forEach((d) => d.classList.remove('chosen'));
 			}
 			return (u, g) => (
 				c(),
 				m('div', dt, [
-					i('div', ct, [
-						i('ul', ut, [
+					i('div', lt, [
+						i('ul', ct, [
 							(c(!0),
 							m(
-								q,
+								A,
 								null,
-								A(
+								j(
 									t.dataStep.options,
 									(d) => (
 										c(),
@@ -376,7 +376,7 @@ const lt = (e) => (B('data-v-3dfbc7a0'), (e = e()), F(), e),
 														onClick: (h) => r(d, h),
 													},
 													[
-														i('div', mt, [
+														i('div', pt, [
 															i(
 																'img',
 																{
@@ -386,18 +386,18 @@ const lt = (e) => (B('data-v-3dfbc7a0'), (e = e()), F(), e),
 																},
 																null,
 																8,
-																ht
+																mt
 															),
 														]),
-														i('div', ft, [
+														i('div', ht, [
 															i('h3', _t, x(d.title), 1),
 															d.subtitle
-																? (c(), m('p', gt, x(d.subtitle), 1))
+																? (c(), m('p', ft, x(d.subtitle), 1))
 																: y('', !0),
 														]),
 													],
 													8,
-													pt
+													ut
 												),
 											]
 										)
@@ -406,32 +406,32 @@ const lt = (e) => (B('data-v-3dfbc7a0'), (e = e()), F(), e),
 								128
 							)),
 						]),
-						k(N, {
+						w(W, {
 							class: 'uk-position-center-left',
 							'uk-slidenav-previous': '',
 							'uk-slider-item': 'previous',
 						}),
-						k(N, {
+						w(W, {
 							class: 'uk-position-center-right',
 							'uk-slidenav-next': '',
 							'uk-slider-item': 'next',
 						}),
 					]),
-					i('ul', vt, [
+					i('ul', gt, [
 						(c(!0),
 						m(
-							q,
+							A,
 							null,
-							A(
+							j(
 								t.dataStep.options,
 								(d, h) => (
 									c(),
 									m(
 										'li',
 										{ key: d.id, 'uk-slider-item': h, class: '!ml-0' },
-										bt,
+										yt,
 										8,
-										xt
+										vt
 									)
 								)
 							),
@@ -442,67 +442,67 @@ const lt = (e) => (B('data-v-3dfbc7a0'), (e = e()), F(), e),
 			);
 		},
 	};
-var kt = S(wt, [['__scopeId', 'data-v-3dfbc7a0']]);
-const Ct = {
+var kt = S(bt, [['__scopeId', 'data-v-3dfbc7a0']]);
+const wt = {
 		class:
 			'grid-inputs mt-5 px-2 text-left md:grid md:grid-cols-2 md:grid-rows-3 md:gap-4 md:justify-start',
 	},
-	$t = ['value'],
-	St = { class: 'ml-2 grid-inputs__text' },
-	Ot = { key: 0, class: 'grid-inputs__item' },
-	It = ['placeholder'],
-	jt = {
+	Ct = ['value'],
+	$t = { class: 'ml-2 grid-inputs__text' },
+	St = { key: 0, class: 'grid-inputs__item' },
+	Ot = ['placeholder'],
+	It = {
 		props: { dataStep: { type: Object, required: !0 } },
 		emits: ['blur-input'],
 		setup(e, { emit: t }) {
-			const o = e,
-				a = O(),
-				r = C(() => a.getActiveIndex),
-				l = z('');
+			const s = e,
+				l = O(),
+				r = C(() => l.getActiveIndex),
+				a = D('');
 			function u(h) {
-				const f = h.target.closest('.grid-inputs__item');
-				if (!f) return;
+				const _ = h.target.closest('.grid-inputs__item');
+				if (!_) return;
 				d();
-				const p = f.querySelector('input[type="radio"]');
-				(p.checked = !0), f.classList.add('chosen');
+				const p = _.querySelector('input[type="radio"]');
+				(p.checked = !0), _.classList.add('chosen');
 			}
 			function g(h) {
-				const f = h.currentTarget.closest('.grid-inputs__item');
-				if (o.dataStep.type === 'radio-my' && l.value.length === 0) {
-					f.classList.remove('chosen'), t('blur-input', l.value);
+				const _ = h.currentTarget.closest('.grid-inputs__item');
+				if (s.dataStep.type === 'radio-my' && a.value.length === 0) {
+					_.classList.remove('chosen'), t('blur-input', a.value);
 					return;
 				}
-				d(), t('blur-input', l.value), f.classList.add('chosen');
+				d(), t('blur-input', a.value), _.classList.add('chosen');
 			}
 			function d() {
 				const h = document.getElementById(`step-${r.value}`),
-					f = h.querySelectorAll('input[type="radio"]'),
+					_ = h.querySelectorAll('input[type="radio"]'),
 					p = h.querySelectorAll('div.grid-inputs__item');
-				f.forEach((s) => {
-					s.checked = !1;
+				_.forEach((o) => {
+					o.checked = !1;
 				}),
-					p.forEach((s) => {
-						s.classList.remove('chosen');
+					p.forEach((o) => {
+						o.classList.remove('chosen');
 					});
 			}
-			return (h, f) => {
+			return (h, _) => {
 				var p;
 				return (
 					c(),
 					m('div', null, [
-						i('div', Ct, [
+						i('div', wt, [
 							(c(!0),
 							m(
-								q,
+								A,
 								null,
-								A(
-									o.dataStep.options,
-									(s) => (
+								j(
+									s.dataStep.options,
+									(o) => (
 										c(),
 										m(
 											'div',
 											{
-												key: s.id,
+												key: o.id,
 												class:
 													'grid-inputs__item p-3 border border-gray-400/40 rounded-sm cursor-pointer mt-3 md:mt-0 inline-flex items-center justify-start w-full',
 												onClick: u,
@@ -515,42 +515,42 @@ const Ct = {
 														name: 'karta',
 														class:
 															'grid-inputs__input grid-inputs__input--radio',
-														value: s.title,
+														value: o.title,
 													},
 													null,
 													8,
-													$t
+													Ct
 												),
-												i('span', St, x(s.title), 1),
+												i('span', $t, x(o.title), 1),
 											]
 										)
 									)
 								),
 								128
 							)),
-							o.dataStep.type.includes('my')
+							s.dataStep.type.includes('my')
 								? (c(),
-								  m('div', Ot, [
+								  m('div', St, [
 										I(
 											i(
 												'input',
 												{
 													'onUpdate:modelValue':
-														f[0] || (f[0] = (s) => (l.value = s)),
+														_[0] || (_[0] = (o) => (a.value = o)),
 													type: 'text',
 													class:
 														'grid-inputs__input grid-inputs__input--variant mt-3 md:mt-0 block w-full p-3 border border-gray-400/40 rounded-sm',
 													placeholder:
-														(p = o.dataStep.placeholder) != null
+														(p = s.dataStep.placeholder) != null
 															? p
 															: '\u0421\u0432\u043E\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442',
-													onBlur: f[1] || (f[1] = (s) => g(s)),
+													onBlur: _[1] || (_[1] = (o) => g(o)),
 												},
 												null,
 												40,
-												It
+												Ot
 											),
-											[[E, l.value, void 0, { trim: !0 }]]
+											[[q, a.value, void 0, { trim: !0 }]]
 										),
 								  ]))
 								: y('', !0),
@@ -561,49 +561,49 @@ const Ct = {
 		},
 	},
 	Lt = ['id'],
-	qt = { class: 'text-left flex items-center mr-auto w-max' },
-	At = { class: 'num-bold font-bold text-blue-500 text-xl' },
-	Et = { class: 'num-upper font-base' },
-	Tt = { class: 'text-lg ml-2' },
+	At = { class: 'text-left flex items-center mr-auto w-max' },
+	jt = { class: 'num-bold font-bold text-blue-500 text-xl' },
+	qt = { class: 'num-upper font-base' },
+	Et = { class: 'text-lg ml-2' },
 	Vt = { class: 'content min-h-[350px] lg:min-h-[420px]' },
-	Dt = { class: 'mt-4 flex justify-center' },
-	Bt = j(
+	Tt = { class: 'mt-4 flex justify-center' },
+	zt = L(
 		' \u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u0432\u043E\u043F\u0440\u043E\u0441 '
 	),
-	w = {
+	k = {
 		setup(e) {
 			const t = O(),
-				o = b(() => t.getActiveIndex),
-				a = b(() => t.getDataLength);
-			function r(s) {
+				s = b(() => t.getActiveIndex),
+				l = b(() => t.getDataLength);
+			function r(o) {
 				return Intl.NumberFormat(navigator.language, {
 					minimumIntegerDigits: 2,
-				}).format(s);
+				}).format(o);
 			}
-			const l = R(t.getData),
-				u = z('');
-			function g(s) {
-				u.value = s;
+			const a = F(t.getData),
+				u = D('');
+			function g(o) {
+				u.value = o;
 			}
-			function d(s) {
-				(s === 'slider-radio' || s === 'slider-checkbox') && h(),
-					(s === 'radio' || s === 'radio-my' || s === 'my') && f();
+			function d(o) {
+				(o === 'slider-radio' || o === 'slider-checkbox') && h(),
+					(o === 'radio' || o === 'radio-my' || o === 'my') && _();
 			}
 			function h() {
-				const s = t.getChosenOptionOnIndex(o.value);
-				if (!s || s.length === 0) {
+				const o = t.getChosenOptionOnIndex(s.value);
+				if (!o || o.length === 0) {
 					p();
 					return;
 				}
 				t.incActiveIndex();
 			}
-			function f() {
+			function _() {
 				if (u.value) t.setChosenOptionFromInput(u.value), (u.value = '');
 				else {
-					const _ = document
-							.getElementById(`step-${o.value}`)
+					const f = document
+							.getElementById(`step-${s.value}`)
 							.querySelectorAll('input[type="radio"]'),
-						$ = Array.from(_).find((D) => D.checked === !0);
+						$ = Array.from(f).find((T) => T.checked === !0);
 					if (!$) {
 						p(!0);
 						return;
@@ -612,54 +612,54 @@ const Ct = {
 				}
 				t.incActiveIndex();
 			}
-			function p(s = !1) {
-				Z.notification({
+			function p(o = !1) {
+				Q.notification({
 					message: `\u041D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043E\u0434\u0438\u043D \u0432\u0430\u0440\u0438\u0430\u043D\u0442${
-						s
+						o
 							? ' \u0438\u043B\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0441\u0432\u043E\u0439'
 							: ''
 					}, \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C`,
 					status: 'danger',
 				});
 			}
-			return (s, _) => (
+			return (o, f) => (
 				c(),
 				m(
 					'div',
-					{ id: `step-${n(o)}`, class: 'text-center h-full' },
+					{ id: `step-${n(s)}`, class: 'text-center h-full' },
 					[
-						i('div', qt, [
-							i('span', At, x(r(n(o))), 1),
-							i('sup', Et, '\xA0/ ' + x(r(n(a))), 1),
-							i('h3', Tt, x(n(l)[n(o)].title), 1),
+						i('div', At, [
+							i('span', jt, x(r(n(s))), 1),
+							i('sup', qt, '\xA0/ ' + x(r(n(l))), 1),
+							i('h3', Et, x(n(a)[n(s)].title), 1),
 						]),
 						i('div', Vt, [
-							n(l)[n(o)].type.includes('slider')
+							n(a)[n(s)].type.includes('slider')
 								? (c(),
-								  v(kt, { key: 0, 'data-step': n(l)[n(o)] }, null, 8, [
+								  v(kt, { key: 0, 'data-step': n(a)[n(s)] }, null, 8, [
 										'data-step',
 								  ]))
-								: n(l)[n(o)].type === 'radio' ||
-								  n(l)[n(o)].type === 'radio-my' ||
-								  n(l)[n(o)].type === 'my'
+								: n(a)[n(s)].type === 'radio' ||
+								  n(a)[n(s)].type === 'radio-my' ||
+								  n(a)[n(s)].type === 'my'
 								? (c(),
 								  v(
-										jt,
-										{ key: 1, 'data-step': n(l)[n(o)], onBlurInput: g },
+										It,
+										{ key: 1, 'data-step': n(a)[n(s)], onBlurInput: g },
 										null,
 										8,
 										['data-step']
 								  ))
 								: y('', !0),
 						]),
-						i('div', Dt, [
-							k(
-								H,
+						i('div', Tt, [
+							w(
+								N,
 								{
 									class: 'preview-block__btn',
-									onClick: _[0] || (_[0] = ($) => d(n(l)[n(o)].type)),
+									onClick: f[0] || (f[0] = ($) => d(n(a)[n(s)].type)),
 								},
-								{ default: T(() => [Bt]), _: 1 }
+								{ default: E(() => [zt]), _: 1 }
 							),
 						]),
 					],
@@ -668,73 +668,30 @@ const Ct = {
 				)
 			);
 		},
-	},
-	L = {
-		send: function (e) {
-			return new Promise(function (t, o) {
-				(e.nocache = Math.floor(1e6 * Math.random() + 1)), (e.Action = 'Send');
-				var a = JSON.stringify(e);
-				L.ajaxPost('https://smtpjs.com/v3/smtpjs.aspx?', a, function (r) {
-					t(r);
-				});
-			});
-		},
-		ajaxPost: function (e, t, o) {
-			var a = L.createCORSRequest('POST', e);
-			a.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'),
-				(a.onload = function () {
-					var r = a.responseText;
-					o != null && o(r);
-				}),
-				a.send(t);
-		},
-		ajax: function (e, t) {
-			var o = L.createCORSRequest('GET', e);
-			(o.onload = function () {
-				var a = o.responseText;
-				t != null && t(a);
-			}),
-				o.send();
-		},
-		createCORSRequest: function (e, t) {
-			var o = new XMLHttpRequest();
-			return (
-				'withCredentials' in o
-					? o.open(e, t, !0)
-					: typeof XDomainRequest != 'undefined'
-					? (o = new XDomainRequest()).open(e, t)
-					: (o = null),
-				o
-			);
-		},
 	};
-async function Ft(e, t, o) {
-	if (!t || !e || !o)
+async function Bt(e, t, s) {
+	if (!t || !e || !s)
 		return new Error(
 			'\u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0444\u043E\u0440\u043C\u0443'
 		);
 	console.log('data: ', e);
-	const a = Object.entries(e)
-		.map(
-			([l, u]) => `
-      <ol style="padding: 10px; margin-top: 8px;"><b>${l}</b>: ${u}</ol>`
-		)
-		.join('');
-	return await L.send({
-		Host: 'smtp.google.com',
-		Username: 'prostoleo.dev@gmail.com',
-		Password: 'ughfxwkqflveychr',
-		To: 'prostoleo.dev@gmail.com',
-		From: 'prostoleo.dev@gmail.com',
-		Subject: `${t} \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B \u0412\u0430\u043C \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435`,
-		Body: `\u0418\u043C\u044F: ${t} <br /> \u041A\u043E\u043D\u0442\u0430\u043A\u0442: ${o} <br /><br /> 
-      <li style="margin-top: 20px; padding-left: 15px;">${a}</li>
-    `,
+	const l = {
+		name: t.trim(),
+		contact: s.trim(),
+		data: e,
+		subject:
+			'\u0417\u0430\u044F\u0432\u043A\u0430 \u0441 \u043A\u0432\u0438\u0437\u0430 \u0441\u0430\u0439\u0442\u0430 renovation-khoremont',
+		fromWebsite: 'https://khoremont-renovation.netlify.app/',
+	};
+	return await fetch('https://functions.yandexcloud.net/d4em2db6rbppd85d8d2a', {
+		method: 'POST',
+		headers: { Accept: '/', 'Content-Type': 'text/plain' },
+		body: JSON.stringify(l),
 	});
 }
-const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
-	zt = { class: 'px-2' },
-	Rt = P(() =>
+const H = (e) => (z('data-v-1712294e'), (e = e()), B(), e),
+	Dt = { class: 'px-2' },
+	Ft = H(() =>
 		i(
 			'h3',
 			{
@@ -746,20 +703,20 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 		)
 	),
 	Mt = ['onSubmit'],
-	Ht = { class: 'form-quiz__inputs grid gap-4 justify-center' },
-	Nt = { class: 'form-quiz__input-row' },
-	Pt = { key: 0, class: 'text-small-error' },
+	Nt = { class: 'form-quiz__inputs grid gap-4 justify-center' },
 	Wt = { class: 'form-quiz__input-row' },
+	Ht = { key: 0, class: 'text-small-error' },
+	Pt = { class: 'form-quiz__input-row' },
 	Ut = ['placeholder'],
-	Qt = { key: 0, class: 'text-small-error' },
-	Zt = { class: 'flex flex-col items-center mt-7' },
-	Xt = { class: 'agree-with-terms inline-flex max-w-[60ch] mx-auto w-fit' },
-	Kt = P(() =>
+	Rt = { key: 0, class: 'text-small-error' },
+	Qt = { class: 'flex flex-col items-center mt-7' },
+	Zt = { class: 'agree-with-terms inline-flex max-w-[60ch] mx-auto w-fit' },
+	Jt = H(() =>
 		i(
 			'p',
 			{ class: 'ml-2 -mt-[6px] flex-shrink w-full' },
 			[
-				j(
+				L(
 					' \u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0443, \u044F \u0434\u0430\u044E \u0441\u0432\u043E\u0451 \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043C\u043E\u0438\u0445 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445, \u0432 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438 \u0441 '
 				),
 				i(
@@ -770,26 +727,26 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 					},
 					'\u0424\u0435\u0434\u0435\u0440\u0430\u043B\u044C\u043D\u044B\u043C \u0437\u0430\u043A\u043E\u043D\u043E\u043C \u043E\u0442 27.07.2006 \u0433\u043E\u0434\u0430 \u2116152-\u0424\u0417 \xAB\u041E \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\xBB'
 				),
-				j('. '),
+				L('. '),
 			],
 			-1
 		)
 	),
-	Gt = j(
+	Kt = L(
 		' \u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443 '
 	),
-	Jt = {
+	Gt = {
 		setup(e) {
-			const t = R({
+			const t = F({
 					name: { val: '', error: !1, touched: !1 },
 					contact: { val: '', error: !1, touched: !1 },
 					disableSubmit: !0,
 					agreeWithTerms: !1,
 				}),
-				o = O(),
-				a = C(() => o.getWayToComunicate),
+				s = O(),
+				l = C(() => s.getWayToComunicate),
 				r = C(() => !t.name.error && t.name.touched),
-				l = C(() => !t.contact.error && t.contact.touched),
+				a = C(() => !t.contact.error && t.contact.touched),
 				u = C(() => t.name.error && t.name.touched),
 				g = C(() => t.contact.error && t.contact.touched);
 			function d(p = null) {
@@ -800,27 +757,27 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 					h();
 			}
 			function h() {
-				r.value && l.value && t.agreeWithTerms
+				r.value && a.value && t.agreeWithTerms
 					? (t.disableSubmit = !1)
 					: (t.disableSubmit = !0);
 			}
-			async function f() {
-				const p = o.getDataForQuizSubmit;
+			async function _() {
+				const p = s.getDataForQuizSubmit;
 				console.log('data: ', p);
 				try {
 					if (!p)
 						throw new Error(
 							'\u043F\u0440\u0435\u0432\u044B\u0448\u0435\u043D\u043E \u0432\u0440\u0435\u043C\u044F \u043D\u0430 \u0437\u0430\u043F\u0440\u043E\u0441'
 						);
-					const s = +new Date();
-					o.handleLoading(!0);
-					const _ = await Ft(p, t.name.val, t.contact.val),
+					const o = +new Date();
+					s.handleLoading(!0);
+					const f = await Bt(p, t.name.val, t.contact.val),
 						$ = +new Date();
-					if (Math.round(($ - s) / 1e3) >= 15)
+					if (Math.round(($ - o) / 1e3) >= 15)
 						throw new Error(
 							' \u043F\u0440\u0435\u0432\u044B\u0448\u0435\u043D\u043E \u0432\u0440\u0435\u043C\u044F \u043D\u0430 \u0437\u0430\u043F\u0440\u043E\u0441'
 						);
-					if ((o.handleLoading(!1), _ !== 'OK'))
+					if ((s.handleLoading(!1), !f.status))
 						throw new Error(
 							' \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u043F\u0438\u0441\u044C\u043C\u043E'
 						);
@@ -829,36 +786,36 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 						message:
 							'\u0412\u0430\u0448\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435 \u0431\u044B\u043B\u043E \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E - \u043C\u044B \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0412\u0430\u043C\u0438 \u0432 \u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0432\u0440\u0435\u043C\u044F',
 					});
-				} catch (s) {
-					console.warn(`\u{1F4A3}\u{1F4A3}\u{1F4A3} ${s}`),
+				} catch (o) {
+					console.warn(`\u{1F4A3}\u{1F4A3}\u{1F4A3} ${o}`),
 						M.notification({
 							status: 'error',
 							message: `${
-								s.message ||
+								o.message ||
 								'\u0423\u043F\u0441, \u0447\u0442\u043E-\u0442\u043E \u043F\u043E\u0448\u043B\u043E \u043D\u0435 \u0442\u0430\u043A'
 							}`,
 						});
 				} finally {
-					o.$reset();
+					s.$reset();
 				}
 			}
-			return (p, s) => (
+			return (p, o) => (
 				c(),
-				m('div', zt, [
-					Rt,
+				m('div', Dt, [
+					Ft,
 					i(
 						'form',
-						{ class: 'form-quiz mt-7', onSubmit: K(f, ['prevent']) },
+						{ class: 'form-quiz mt-7', onSubmit: J(_, ['prevent']) },
 						[
-							i('div', Ht, [
-								i('div', Nt, [
+							i('div', Nt, [
+								i('div', Wt, [
 									I(
 										i(
 											'input',
 											{
 												id: 'form-quiz__input--name',
 												'onUpdate:modelValue':
-													s[0] || (s[0] = (_) => (n(t).name.val = _)),
+													o[0] || (o[0] = (f) => (n(t).name.val = f)),
 												type: 'text',
 												class: V([
 													'form-quiz__input',
@@ -866,56 +823,56 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 												]),
 												placeholder:
 													'\u0412\u0430\u0448\u0435 \u0438\u043C\u044F',
-												onBlur: s[1] || (s[1] = (_) => d('name')),
+												onBlur: o[1] || (o[1] = (f) => d('name')),
 											},
 											null,
 											34
 										),
-										[[E, n(t).name.val, void 0, { trim: !0 }]]
+										[[q, n(t).name.val, void 0, { trim: !0 }]]
 									),
 									n(u)
 										? (c(),
 										  m(
 												'small',
-												Pt,
+												Ht,
 												' \u042D\u0442\u043E \u043F\u043E\u043B\u0435 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u043B\u044F \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F '
 										  ))
 										: y('', !0),
 								]),
-								i('div', Wt, [
+								i('div', Pt, [
 									I(
 										i(
 											'input',
 											{
 												id: 'form-quiz__input--contact',
 												'onUpdate:modelValue':
-													s[2] || (s[2] = (_) => (n(t).contact.val = _)),
+													o[2] || (o[2] = (f) => (n(t).contact.val = f)),
 												type: 'text',
 												class: V([
 													'form-quiz__input',
-													{ error: n(g), approved: n(l) },
+													{ error: n(g), approved: n(a) },
 												]),
-												placeholder: `\u0412\u0430\u0448 ${n(a)}`,
-												onBlur: s[3] || (s[3] = (_) => d('contact')),
+												placeholder: `\u0412\u0430\u0448 ${n(l)}`,
+												onBlur: o[3] || (o[3] = (f) => d('contact')),
 											},
 											null,
 											42,
 											Ut
 										),
-										[[E, n(t).contact.val, void 0, { trim: !0 }]]
+										[[q, n(t).contact.val, void 0, { trim: !0 }]]
 									),
 									n(g)
 										? (c(),
 										  m(
 												'small',
-												Qt,
+												Rt,
 												' \u042D\u0442\u043E \u043F\u043E\u043B\u0435 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u043B\u044F \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F '
 										  ))
 										: y('', !0),
 								]),
 							]),
-							i('div', Zt, [
-								i('div', Xt, [
+							i('div', Qt, [
+								i('div', Zt, [
 									I(
 										i(
 											'input',
@@ -923,18 +880,18 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 												type: 'checkbox',
 												class: 'flex-grow flex-shrink-0',
 												'onUpdate:modelValue':
-													s[4] || (s[4] = (_) => (n(t).agreeWithTerms = _)),
-												onChange: s[5] || (s[5] = (_) => d('checkbox')),
+													o[4] || (o[4] = (f) => (n(t).agreeWithTerms = f)),
+												onChange: o[5] || (o[5] = (f) => d('checkbox')),
 											},
 											null,
 											544
 										),
-										[[X, n(t).agreeWithTerms]]
+										[[Z, n(t).agreeWithTerms]]
 									),
-									Kt,
+									Jt,
 								]),
-								k(
-									H,
+								w(
+									N,
 									{
 										class: V([
 											'mx-auto w-max mt-5',
@@ -942,7 +899,7 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 										]),
 										disabled: n(t).disableSubmit,
 									},
-									{ default: T(() => [Gt]), _: 1 },
+									{ default: E(() => [Kt]), _: 1 },
 									8,
 									['class', 'disabled']
 								),
@@ -955,54 +912,54 @@ const P = (e) => (B('data-v-1ff40f5a'), (e = e()), F(), e),
 			);
 		},
 	};
-var Yt = S(Jt, [['__scopeId', 'data-v-1ff40f5a']]);
-const te = {
+var Xt = S(Gt, [['__scopeId', 'data-v-1712294e']]);
+const Yt = {
 		class:
 			'custom-progress rounded-lg bg-gray-100 w-full overflow-hidden relative h-[18px]',
 	},
-	ee = { class: 'text font-semibold w-max' },
-	oe = {
+	te = { class: 'text font-semibold w-max' },
+	ee = {
 		props: { progress: { type: String, required: !0 } },
 		setup(e) {
 			const t = e;
-			return (o, a) => (
+			return (s, l) => (
 				c(),
-				m('div', te, [
+				m('div', Yt, [
 					i(
 						'span',
 						{
 							class:
 								'fill bg-blue-500 absolute left-0 top-0 bottom-0 text-white text-[12px] block w-full h-full p-[0.25em] inline-flex justify-center items-center transition-all duration-600 ease-in',
-							style: G(`width: ${parseFloat(t.progress)}%`),
+							style: K(`width: ${parseFloat(t.progress)}%`),
 						},
-						[i('span', ee, x(t.progress), 1)],
+						[i('span', te, x(t.progress), 1)],
 						4
 					),
 				])
 			);
 		},
 	};
-var se = S(oe, [['__scopeId', 'data-v-0f83254a']]);
-const ne = {
+var se = S(ee, [['__scopeId', 'data-v-0f83254a']]);
+const oe = {
 		key: 0,
 		class:
 			'loader-wrapper flex items-center justify-center my-10 mx-2 min-h-[450px] w-full rounded-md shadow shadow-dark-100/20 shadow-lg',
 	},
-	ie = i('div', { class: 'loader' }, null, -1),
-	re = [ie],
-	ae = {
+	ne = i('div', { class: 'loader' }, null, -1),
+	ie = [ne],
+	re = {
 		key: 1,
 		id: 'quiz-container',
 		class:
 			'container mx-auto p-5 my-10 mx-2 rounded-md shadow shadow-dark-100/20 shadow-lg text-black md:min-h-[680px] overflow-hidden',
 	},
-	le = { id: 'quiz', class: 'lg:flex lg:justify-between' },
+	ae = { id: 'quiz', class: 'lg:flex lg:justify-between' },
 	de = {
 		class:
 			'bg-amber-600 w-full flex items-center justify-center rounded-md text-light-50 p-5 lg:w-3/12',
 	},
-	ce = { class: 'text-center' },
-	ue = i(
+	le = { class: 'text-center' },
+	ce = i(
 		'svg',
 		{ width: '100', height: '100', viewBox: '0 0 100 100', fill: 'white' },
 		[
@@ -1014,33 +971,33 @@ const ne = {
 		],
 		-1
 	),
-	pe = i(
+	ue = i(
 		'p',
 		{ class: 'kupon-title font-bold text-2xl mt-[1em] lg:text-3xl uppercase' },
 		' \u0431\u043E\u043D\u0443\u0441 ',
 		-1
 	),
-	me = { class: 'kupon-price text-lg' },
-	he = { class: 'mt-5 w-full overflow-hidden lg:w-8/12 lg:mt-0' },
-	fe = { class: 'overflow-hidden' },
+	pe = { class: 'kupon-price text-lg' },
+	me = { class: 'mt-5 w-full overflow-hidden lg:w-8/12 lg:mt-0' },
+	he = { class: 'overflow-hidden' },
 	_e = { class: 'pro mb-4' },
-	ge = {
+	fe = {
 		setup(e) {
 			const t = O();
 			t.handleLoading(!0);
-			const o = b(() => t.getLoading);
+			const s = b(() => t.getLoading);
 			window.addEventListener('load', () => {
 				t.handleLoading(!1);
 			});
-			const a = b(() =>
+			const l = b(() =>
 					t.getBonusOption
 						? '\u0412\u044B\u0431\u0440\u0430\u043D !'
 						: '\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D!'
 				),
 				r = b(() => t.getActiveIndex),
-				l = b(() => t.getDataLength),
+				a = b(() => t.getDataLength),
 				u = b(() => {
-					const d = r.value / l.value;
+					const d = r.value / a.value;
 					return g(d);
 				});
 			function g(d) {
@@ -1054,46 +1011,46 @@ const ne = {
 			return (d, h) => (
 				c(),
 				m('div', null, [
-					n(o)
-						? (c(), m('div', ne, re))
-						: n(o)
+					n(s)
+						? (c(), m('div', oe, ie))
+						: n(s)
 						? y('', !0)
 						: (c(),
-						  m('div', ae, [
-								i('div', le, [
+						  m('div', re, [
+								i('div', ae, [
 									i('div', de, [
-										i('div', ce, [ue, pe, i('p', me, x(n(a)), 1)]),
+										i('div', le, [ce, ue, i('p', pe, x(n(l)), 1)]),
 									]),
-									i('div', he, [
-										i('div', fe, [
+									i('div', me, [
+										i('div', he, [
 											i('div', _e, [
-												k(se, { progress: n(u) }, null, 8, ['progress']),
+												w(se, { progress: n(u) }, null, 8, ['progress']),
 											]),
-											k(
-												J,
+											w(
+												G,
 												{
 													name: 'question',
 													mode: 'out-in',
 													class: 'overflow-hidden',
 												},
 												{
-													default: T(() => [
+													default: E(() => [
 														n(r) == 1
-															? (c(), v(w, { key: 0 }))
+															? (c(), v(k, { key: 0 }))
 															: n(r) == 2
-															? (c(), v(w, { key: 1 }))
+															? (c(), v(k, { key: 1 }))
 															: n(r) == 3
-															? (c(), v(w, { key: 2 }))
+															? (c(), v(k, { key: 2 }))
 															: n(r) == 4
-															? (c(), v(w, { key: 3 }))
+															? (c(), v(k, { key: 3 }))
 															: n(r) == 5
-															? (c(), v(w, { key: 4 }))
+															? (c(), v(k, { key: 4 }))
 															: n(r) == 6
-															? (c(), v(w, { key: 5 }))
+															? (c(), v(k, { key: 5 }))
 															: n(r) == 7
-															? (c(), v(w, { key: 6 }))
+															? (c(), v(k, { key: 6 }))
 															: n(r) == 8
-															? (c(), v(Yt, { key: 7 }))
+															? (c(), v(Xt, { key: 7 }))
 															: y('', !0),
 													]),
 													_: 1,
@@ -1107,6 +1064,6 @@ const ne = {
 			);
 		},
 	};
-const W = Y(ge);
-W.use(tt());
-W.mount('#quiz-wrapper');
+const P = X(fe);
+P.use(Y());
+P.mount('#quiz-wrapper');

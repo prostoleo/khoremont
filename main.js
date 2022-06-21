@@ -1,5 +1,5 @@
 import './style.css';
-import './quiz/assets/index.9fbf7eeb.css';
+import './quiz/assets/index.2e6b1a38.css';
 import './assets/scss/main.scss';
 
 // animation

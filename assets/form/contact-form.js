@@ -16,6 +16,7 @@ export default function contactForm() {
 	//* formElements
 	const contactSectionEl = document.querySelector('.contact-section');
 	const formInContactSection = contactSectionEl.querySelector('form.form');
+	console.log('formInContactSection: ', formInContactSection);
 
 	const title =
 		contactSectionEl.getAttribute('aria-label') ??
