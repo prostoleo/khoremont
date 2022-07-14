@@ -86,7 +86,18 @@ export default function handleForm(formEl, title, selector) {
 			// console.log('input.value.trim().length: ', input.value.trim().length);
 
 			//* if inputPhone valid
-			if (input.value.trim() && input.value.trim().length === 18) {
+			/* if (input.value.trim() && input.value.trim().length === 18) {
+				input.classList.remove('error');
+				validData.phone.error = false;
+			} else {
+				//* if inputPhone invalid
+				input.classList.add('error');
+				validData.phone.error = true;
+			} */
+			const regexp = /^[0-9" "\-+()]+$/gm;
+			const regExpTest = regexp.test(input.value);
+
+			if (input.value.trim() && regExpTest) {
 				input.classList.remove('error');
 				validData.phone.error = false;
 			} else {

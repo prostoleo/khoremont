@@ -24,7 +24,7 @@ export default function contactForm() {
 			.textContent;
 	// console.log('title: ', title);
 
-	maskPhone();
+	// maskPhone();
 	handleForm(formInContactSection, title, '#modal');
 
 	//=============
